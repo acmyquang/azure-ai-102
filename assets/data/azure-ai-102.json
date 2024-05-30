@@ -1,0 +1,434 @@
+[
+    {
+        "question": "Question 1. You have 100 chatbots that each has its own Language Understanding model.\nFrequently, you must add the same phrases to each model.\nYou need to programmatically update the Language Understanding models to include the new phrases.\nHow should you complete the code? To answer, drag the appropriate values to the correct targets. Each value may be used once, more than once,or not at all.\nYou may need to drag the split bar between panes or scroll to view content.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "images": "assets/images/question1.png",
+        "options": [
+            "A. AddPhraseListAsync",
+            "B. PhraseList",
+            "C. PhraseListCreateObject",
+            "D. Phrases",
+            "E. SavePhraseListAsync",
+            "F. UploadPhraseListAsync"
+        ],
+        "correct": ["A. AddPhraseListAsync","C. PhraseListCreateObject"]
+    },
+    {
+        "question": "Question 2. You plan to use a Language Understanding application named app1 that is deployed to a container.\nApp1 was developed by using a Language Understanding authoring resource named lu1.\nApp1 has the versions shown in the following table.\nYou need to create a container that uses the latest deployable version of app1.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.\nSelect and Place:",
+        "images": "assets/images/question2.png",
+        "options": [
+            "A. Run a container that has version set an enviroment variable.",
+            "B. Export the model by using the\nExport as JSON option.",
+            "C. Select v1.1 of app1.",
+            "D. Run a container and mount the model file.",
+            "E. Select v1.0 of app1.",
+            "F. Export the model by using the\nExport for containers (GZIP) option.",
+            "G. Select v1.2 of app1."
+        ],
+        "correct": ["C. Select v1.1 of app1.","F. Export the model by using the\nExport for containers (GZIP) option.","D. Run a container and mount the model file."]
+    },
+    {
+        "question": "Question 3. You need to build a chatbot that meets the following requirements:\n✑ Supports chit-chat, knowledge base, and multilingual models\n✑ Performs sentiment analysis on user messages\n✑ Selects the best language model automatically\nWhat should you integrate into the chatbot?",
+        "options": [
+            "A. QnA Maker, Language Understanding, and Dispatch",
+            "B. Translator, Speech, and Dispatch",
+            "C. Language Understanding, Text Analytics, and QnA Maker",
+            "D. Text Analytics, Translator, and Dispatch"
+        ],
+        "correct": "C. Language Understanding, Text Analytics, and QnA Maker"
+    },
+    {
+        "question": "Question 4. Your company wants to reduce how long it takes for employees to log receipts in expense reports.\nAll the receipts are in English.\nYou need to extract top-level information from the receipts, such as the vendor and the transaction total.\nThe solution must minimize development effort.\nWhich Azure service should you use?",
+        "options": [
+            "A. Custom Vision",
+            "B. Personalizer",
+            "C. Form Recognizer",
+            "D. Computer Vision"
+        ],
+        "correct": "C. Form Recognizer"
+    },
+    {
+        "question": "Question 5. You need to create a new resource that will be used to perform sentiment analysis and optical character recognition (OCR). The solution must\nmeet the following requirements:\n✑ Use a single key and endpoint to access multiple services.\n✑ Consolidate billing for future services that you might use.\n✑ Support the use of Computer Vision in the future.\nHow should you complete the HTTP request to create the new resource? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.\nHot Area",
+        "images":"assets/images/question5.png",
+        "options": [
+            "A. PATCH",
+            "B. POST",
+            "C. PUT",
+            "D. CognitiveServices",
+            "E. ComputerVision",
+            "F. TextAnalytics"
+        ],
+        "correct": ["C. PUT", "D. CognitiveServices"]
+    },
+    {
+        "question": "Question 6. You are developing a new sales system that will process the video and text from a public-facing website.\nYou plan to monitor the sales system to ensure that it provides equitable results regardless of the user's location or background.\nWhich two responsible AI principles provide guidance to meet the monitoring requirements? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. transparency",
+            "B. fairness",
+            "C. inclusiveness",
+            "D. reliability and safety",
+            "E. privacy and security"
+        ],
+        "correct": ["B. fairness", "C. inclusiveness"]
+    },
+    {
+        "question": "Question 7. You plan to use containerized versions of the Anomaly Detector API on local devices for testing and in on-premises datacenters.\nYou need to ensure that the containerized deployments meet the following requirements:\n✑ Prevent billing and API information from being stored in the command-line histories of the devices that run the container.\n✑ Control access to the container images by using Azure role-based access control (Azure RBAC).\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and\narrange them in the correct order.\nNOTE: More than one order of answer choices is correct. You will receive credit for any of the correct orders you select.\nSelect and Place:",
+        "images":"assets/images/question7.png",
+        "options": [
+            "A. Create a custom Dockerfile.",
+            "B. Pull the Anomaly Detector container image.",
+            "C. Distribute a docker run SCTIDE.",
+            "D. Push the image to an Azure container registry",
+            "E. Bulld the image.",
+            "F. Push the Image to Docker Hub."
+        ],
+        "correct": ["A. Create a custom Dockerfile.", "E. Bulld the image.","D. Push the image to an Azure container registry","C. Distribute a docker run SCTIDE."]
+    },
+    {
+        "question": "Question 8. You plan to deploy a containerized version of an Azure Cognitive Services service that will be used for text analysis.\nYou configure https://contoso.cognitiveservices.azure.com as the endpoint URI for the service, and you pull the latest version of the Text Analytics\nSentiment Analysis container.\nYou need to run the container on an Azure virtual machine by using Docker.\nHow should you complete the command? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "images":"assets/images/question8.png",
+        "options": [
+            "A. http://contose.blob.core.windows.net",
+            "B. https://contoso.cognitiveservice3.azure.com",
+            "C. mcr.miCroso£t.com/azuze-cognitive-sexvices/textanalytics/keyphrase",
+            "D. mcr.mierosofE.com/azure-coganitive-services/textanalvEics/sentiment",
+            "E. http://contose.blob.core.windows.net",
+            "F. https://contoso.cognitiveservices.azure.com",
+            "G. mcr.miCrcsoft.com/azure-cognitive-services/textanalytics/keyphrase",
+            "H. mcr.mierosofE.com/azure-coganitive-services/textanalvEics/sentiment"
+        ],
+        "correct": ["D. mcr.mierosofE.com/azure-coganitive-services/textanalvEics/sentiment", "F. https://contoso.cognitiveservices.azure.com"]
+    },
+    {
+        "question": "Question 9. You have the following C# method for creating Azure Cognitive Services resources programmatically.\nYou need to call the method to create a free Azure resource in the West US Azure region. The resource will be used to generate captions of images automatically.\nWhich code should you use?",
+        "options": [
+            "A. create_resource(client, 'res1', 'ComputerVision', 'F0', 'westus')",
+            "B. create_resource(client, res1, CustomVision.Prediction, F0, westus)",
+            "C. create_resource(client, res1, ComputerVision, S0, westus)",
+            "D. create_resource(client, res1, CustomVision.Prediction, S0, westus)"
+        ],
+        "correct": "A. create_resource(client, 'res1', 'ComputerVision', 'F0', 'westus')"
+    },
+    {
+        "question": "Question 10. You successfully run the following HTTP request.\nPOST https://management.azure.com/subscriptions/18c51a87-3a69-47a8-aedc-a54745f708a1/resourceGroups/RG1/providers/Microsoft.CognitiveServices/accounts/contoso1/regenerateKey?api-version=2017-04-18\nBody{\"keyName\": \"Key2\"}\nWhat is the result of the request?",
+        "options": [
+          "A. A key for Azure Cognitive Services was generated in Azure Key Vault.",
+          "B. A new query key was generated.",
+          "C. The primary subscription key and the secondary subscription key were rotated.",
+          "D. The secondary subscription key was reset."
+        ],
+        "correct": "D. The secondary subscription key was reset."
+      },
+      {
+        "question": "Question 11. You build a custom Form Recognizer model.\nYou receive sample files to use for training the model as shown in the following table.\nWhich three files can you use to train the model?\nEach correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "images": "assets/images/question11.png",
+        "options": [
+          "A. File1",
+          "B. File2",
+          "C. File3",
+          "D. File4",
+          "E. File5",
+          "F. File6"
+        ],
+        "correct": [
+          "A. File1",
+          "C. File3",
+          "F. File6"
+        ]
+      }
+      ,
+      {
+        "question": "Question 12. A customer uses Azure Cognitive Search.\nThe customer plans to enable a server-side encryption and use customer-managed keys (CMK) stored in Azure.\nWhat are three implications of the planned change?\nEach correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+          "A. The index size will increase.",
+          "B. Query times will increase.",
+          "C. A self-signed X.509 certificate is required.",
+          "D. The index size will decrease.",
+          "E. Query times will decrease.",
+          "F. Azure Key Vault is required."
+        ],
+        "correct": ["A. The index size will increase.", "B. Query times will increase.", "F. Azure Key Vault is required."]
+      },
+      {
+        "question": "Question 13. You are developing a new sales system that will process the video and text from a public-facing website.\nYou plan to notify users that their data has been processed by the sales system.\nWhich responsible AI principle does this help meet?",
+        "options": [
+          "A. transparency",
+          "B. fairness",
+          "C. inclusiveness",
+          "D. reliability and safety"
+        ],
+        "correct": "A. transparency"
+      },
+      {
+        "question": "Question 14. Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You create a web app named app1 that runs on an Azure virtual machine named vm1. Vm1 is on an Azure virtual network named vnet1.\nYou plan to create a new Azure Cognitive Search service named service1.\nYou need to ensure that app1 can connect directly to service1 without routing traffic over the public internet.\nSolution: You deploy service1 and a public endpoint to a new virtual network, and you configure Azure Private Link.\nDoes this meet the goal?",
+        "options": [
+          "A. Yes",
+          "B. No"
+        ],
+        "correct": "B. No"
+      },
+      {
+        "question": "Question 15. Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You create a web app named app1 that runs on an Azure virtual machine named vm1. Vm1 is on an Azure virtual network named vnet1.\nYou plan to create a new Azure Cognitive Search service named service1.\nYou need to ensure that app1 can connect directly to service1 without routing traffic over the public internet.\nSolution: You deploy service1 and a public endpoint, and you configure an IP firewall rule.\nDoes this meet the goal?",
+        "options": [
+          "A. Yes",
+          "B. No"
+        ],
+        "correct": "B. No"
+      },
+      {
+        "question": "Question 16. Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You create a web app named app1 that runs on an Azure virtual machine named vm1. Vm1 is on an Azure virtual network named vnet1.\nYou plan to create a new Azure Cognitive Search service named service1.\nYou need to ensure that app1 can connect directly to service1 without routing traffic over the public internet.\nSolution: You deploy service1 and a public endpoint, and you configure a network security group (NSG) for vnet1.\nDoes this meet the goal?",
+        "options": [
+          "A. Yes",
+          "B. No"
+        ],
+        "correct": "B. No"
+      },
+      {
+        "question": "Question 17. You plan to perform predictive maintenance.\nYou collect IoT sensor data from 100 industrial machines for a year. Each machine has 50 different sensors that generate data at one-minute intervals. In total, you have 5,000 time series datasets.\nYou need to identify unusual values in each time series to help predict machinery failures.\nWhich Azure service should you use?",
+        "options": [
+          "A. Anomaly Detector",
+          "B. Cognitive Search",
+          "C. Form Recognizer",
+          "D. Custom Vision"
+        ],
+        "correct": "A. Anomaly Detector"
+      },
+      {
+        "question": "Question 18. You are developing a streaming Speech to Text solution that will use the Speech SDK and MP3 encoding.\nYou need to develop a method to convert speech to text for streaming MP3 data.\nHow should you complete the code? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "images":"assets/images/question18.png",
+        "options": [
+            "A. AudioConfig.SetPraperty",
+            "B. AudioStreamFormat.GetCompressedFormat",
+            "C. AudioStreamFormat.GetVWaveFormatPCM",
+            "D. PullAudiolnputStream",
+            "E. KeywordRecognizer",
+            "F. SpeakerRtecognizer",
+            "G. SpeechRecoanizer",
+            "H. SpeechSynthesizer"
+        ],
+        "correct": ["B. AudioStreamFormat.GetCompressedFormat", "G. SpeechRecoanizer"]
+    },
+    {
+        "question": "Question 19. You are developing an internet-based training solution for remote learners.\nYour company identifies that during the training, some learners leave their desk for long periods or become distracted.\nYou need to use a video and audio feed from each learner's computer to detect whether the learner is present and paying attention. The solution\nmust minimize development effort and identify each learner.\nWhich Azure Cognitive Services service should you use for each requirement? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "images":"assets/images/question19.png",
+        "options": [
+            "A. Face",
+            "B. Speech",
+            "C. Text Analytics",
+            "D. Face",
+            "E. Speech",
+            "F. Text Analytics",
+            "G. Face",
+            "H. Speech",
+            "J. Text Analytics"
+        ],
+        "correct": ["A. Face", "D. Face","H. Speech"]
+    },
+    {
+        "question": "Question 20. You plan to provision a QnA Maker service in a new resource group named RG1.\nIn RG1, you create an App Service plan named AP1.\nWhich two Azure resources are automatically created in RG1 when you provision the QnA Maker service? Each correct answer presents part of the\nsolution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A.  Language Understanding",
+            "B. Azure SQL Database",
+            "C. Azure S†orage",
+            "D. Azure Cognitive Search",
+            "E. Azure App Service"
+        ],
+        "correct": ["D. Azure Cognitive Search","E. Azure App Service"]
+    },
+    {
+        "question": "Question 21. You are building a language model by using a Language Understanding (classic) service.\nYou create a new Language Understanding (classic) resource.\nYou need to add more contributors.\nWhat should you use?",
+        "options": [
+            "A. a conditional access policy in Azure Active Directory (Azure AD)",
+            "B. the Access control (IAM) page for the authoring resources in the Azure portal",
+            "C. the Access control (IAM) page for the prediction resources in the Azure portal"
+        ],
+        "correct": "B. the Access control (IAM) page for the authoring resources in the Azure portal"
+    },
+    {
+        "question": " Question 22. You have an Azure Cognitive Search service.\nDuring the past 12 months, query volume steadily increased.\nYou discover that some search query requests to the Cognitive Search service are being throttled.\nYou need to reduce the likelihood that search query requests are throttled.\nSolution: You migrate to a Cognitive Search service that uses a higher tier.\nDoes this meet the goal?",
+        "options": [
+            "A. Yes",
+            "B. No"
+        ],
+        "correct":  "A. Yes"
+    },
+    {
+        "question": "Question 23. You need to develop an automated call handling system that can respond to callers in their own language. The system will support only French\nand English.\nWhich Azure Cognitive Services service should you use to meet each requirement? To answer, drag the appropriate services to the correct\nrequirements. Each service may be used once, more than once, or not at all. You may need to drag the split bat between panes or scroll to view\ncontent.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "images": "assets/images/question23.png",
+        "options": [
+          "A. Speaker Recognition",
+          "B. Speech to Text",
+          "C. Text Analytics",
+          "D. Text to Speech",
+          "E. Tránlator"
+        ],
+        "correct": ["B. Speech to Text","D. Text to Speech"]
+      },
+    {
+        "question": "Question 24. You have receipts that are accessible from a URL.\nYou need to extract data from the receipts by using Form Recognizer and the SDK. The solution must use a prebuilt model.\nWhich client and method should you use?",
+        "options": [
+            "A. the FormRecognizerClient client and the StartRecognizeContentFromUri method",
+            "B. the FormTrainingClient client and the StartRecognizeContentFromUri method",
+            "C. the FormRecognizerClient client and the StartRecognizeReceiptsFromUri method",
+            "D. the FormTrainingClient client and the StartRecognizeReceiptsFromUri method"
+          ],
+        "correct": "C. the FormRecognizerClient client and the StartRecognizeReceiptsFromUri method"
+    },
+    {
+        "question": "Question 25. You have a collection of 50,000 scanned documents that contain text.\nYou plan to make the text available through Azure Cognitive Search.\nYou need to configure an enrichment pipeline to perform optical character recognition (OCR) and text analytics. The solution must minimize costs.\nWhat should you attach to the skillset?",
+        "options": [
+            "A. a new Computer Vision resource",
+            "B. a free (Limited enrichments) Cognitive Services resource",
+            "C. an Azure Machine Learning Designer pipeline",
+            "D. a new Cognitive Services resource that uses the S0 pricing tier"
+          ],
+        "correct": "D. a new Cognitive Services resource that uses the S0 pricing tier"
+    },
+    {
+      "question": "Question 26. Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Cognitive Search service.\nDuring the past 12 months, query volume steadily increased.\nYou discover that some search query requests to the Cognitive Search service are being throttled.\nYou need to reduce the likelihood that search query requests are throttled.\nSolution: You add indexes.\nDoes this meet the goal?",
+      "options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "correct": "B. No"
+    },
+    {
+      "question": "Question 27. Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Cognitive Search service.\nDuring the past 12 months, query volume steadily increased.\nYou discover that some search query requests to the Cognitive Search service are being throttled.\nYou need to reduce the likelihood that search query requests are throttled.\nSolution: You enable customer-managed key (CMK) encryption.\nDoes this meet the goal?",
+      "options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "correct": "B. No"
+    },
+    {
+      "question": "Question 27. Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou create a web app named app1 that runs on an Azure virtual machine named vm1. Vm1 is on an Azure virtual network named vnet1.\nYou plan to create a new Azure Cognitive Search service named service1.\nYou need to ensure that app1 can connect directly to service1 without routing traffic over the public internet.\nSolution: You deploy service1 and a private endpoint to vnet1.\nDoes this meet the goal?",
+      "options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "correct": "A. Yes"
+    },
+    {
+      "question": "Question 29. You have a Language Understanding resource named lu1.\nYou build and deploy an Azure bot named bot1 that uses lu1.\nYou need to ensure that bot1 adheres to the Microsoft responsible AI principle of inclusiveness.\nHow should you extend bot1?",
+      "options": [
+        "A. Implement authentication for bot1.",
+        "B. Enable active learning for lu1.",
+        "C. Host lu1 in a container.",
+        "D. Add Direct Line Speech to bot1."
+      ],
+      "correct": "D. Add Direct Line Speech to bot1."
+    },
+    {
+      "question": "Question 30. You are building an app that will process incoming email and direct messages to either French or English language support teams.\nWhich Azure Cognitive Services API should you use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+      "images":"assets/images/question30.png",
+      "options": [
+        "A. api.cognitive.microsofttranslator.com",
+        "B. eastus.api.cognitive.microsoft.com",
+        "C. portal.azure.com",
+        "D. /text/analytics/v3.1/entities/recognition/general",
+        "E. /text/analytics/v3.1/languages",
+        "F. /translator/text/v3.0/translate?to=en",
+        "G. /translator/text/v3.0/translate?to=fr"
+      ],
+      "correct": ["B. eastus.api.cognitive.microsoft.com","E. /text/analytics/v3.1/languages"]
+    },
+    {
+      "question": "Question 31. You have an Azure Cognitive Search instance that indexes purchase orders by using Form Recognizer.\nYou need to analyze the extracted information by using Microsoft Power BI. The solution must minimize development effort.\nWhat should you add to the indexer?",
+      "options": [
+        "A. a projection group",
+        "B. a table projection",
+        "C. a file projection",
+        "D. an object projection"
+      ],
+      "correct": "B. a table projection"
+    },
+    {
+      "question": "Question 32. Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have an Azure Cognitive Search service.\nDuring the past 12 months, query volume steadily increased.\nYou discover that some search query requests to the Cognitive Search service are being throttled.\nYou need to reduce the likelihood that search query requests are throttled.\nSolution: You add replicas.\nDoes this meet the goal?",
+      "options": [
+        "A. Yes",
+        "B. No"
+      ],
+      "correct": "A. Yes"
+    },
+    {
+      "question": "Question 37. You have a factory that produces food products.\nYou need to build a monitoring solution for staff compliance with personal protective equipment (PPE) requirements. The solution must meet the following requirements:\n* Identify staff who have removed masks or safety glasses.\n* Perform a compliance check every 15 minutes.\n* Minimize development effort.\n* Minimize costs.\nWhich service should you use?",
+      "options": [
+        "A. Face",
+        "B. Computer Vision",
+        "C. Azure Video Analyzer for Media (formerly Video Indexer)"
+      ],
+      "correct": "B. Computer Vision"
+    },
+    {
+      "question": "Question 38. You have an Azure Cognitive Search solution and a collection of blog posts that include a category field.\nYou need to index the posts. The solution must meet the following requirements:\n* Include the category field in the search results.\n* Ensure that users can search for words in the category field.\n* Ensure that users can perform drill down filtering based on category.\nWhich index attributes should you configure for the category field?",
+      "options": [
+        "A. searchable, sortable, and retrievable",
+        "B. searchable, facetable, and retrievable",
+        "C. retrievable, filterable, and sortable",
+        "D. retrievable, facetable, and key"
+      ],
+      "correct": "B. searchable, facetable, and retrievable"
+    },
+    {
+      "question": "Question 45. You have an Azure IoT hub that receives sensor data from machinery.\nYou need to build an app that will perform the following actions:\n• Perform anomaly detection across multiple correlated sensors.\n• Identify the root cause of process stops.\n• Send incident alerts.\nThe solution must minimize development time.\nWhich Azure service should you use?",
+      "options": [
+        "A. Azure Metrics Advisor",
+        "B. Form Recognizer",
+        "C. Azure Machine Learning",
+        "D. Anomaly Detector"
+      ],
+      "correct": "A. Azure Metrics Advisor"
+    },
+    {
+      "question": "Question 46. You have an app that analyzes images by using the Computer Vision API.\nYou need to configure the app to provide an output for users who are vision impaired. The solution must provide the output in complete sentences.\nWhich API call should you perform?",
+      "options": [
+        "A. readInStreamAsync",
+        "B. analyzeImagesByDomainInStreamAsync",
+        "C. tagImageInStreamAsync",
+        "D. describeImageInStreamAsync"
+      ],
+      "correct": "D. describeImageInStreamAsync"
+    },
+    {
+      "question": "You have a Custom Vision service project that performs object detection. The project uses the General domain for classification and contains a trained model.\nYou need to export the model for use on a network that is disconnected from the internet.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+      "images":"assets/images/question47.png",
+      "options": [
+        "A. Change the classification type.",
+        "B. Export the model",
+        "C. Retrain the model",
+        "D. Change Domains to General (Compact).",
+        "E. Create a new classification model."
+      ],
+      "correct": ["D. Change Domains to General (Compact).", "C. Retrain the model", "B. Export the model"]
+    },
+    {
+      "question": "Question 48. You are building an AI solution that will use Sentiment Analysis results from surveys to calculate bonuses for customer service staff.\nYou need to ensure that the solution meets the Microsoft responsible AI principles.\nWhat should you do?",
+      "options": [
+        "A. Add a human review and approval step before making decisions that affect the staff's financial situation.",
+        "B. Include the Sentiment Analysis results when surveys return a low confidence score.",
+        "C. Use all the surveys, including surveys by customers who requested that their account be deleted and their data be removed.",
+        "D. Publish the raw survey data to a central location and provide the staff with access to the location."
+      ],
+      "correct": "A. Add a human review and approval step before making decisions that affect the staff's financial situation."
+    },
+    {
+      "question": "Question 49. You have an Azure subscription that contains a Language service resource named ta1 and a virtual network named vnet1.\nYou need to ensure that only resources in vnet1 can access ta1.\nWhat should you configure?",
+      "options": [
+        "A. a network security group (NSG) for vnet1",
+        "B. Azure Firewall for vnet1",
+        "C. the virtual network settings for ta1",
+        "D. a Language service container for ta1"
+      ],
+      "correct": "C. the virtual network settings for ta1"
+    },
+    {
+      "question": "Question 50. You are developing a monitoring system that will analyze engine sensor data, such as rotation speed, angle, temperature, and pressure. The system must generate an alert in response to atypical values.\nWhat should you include in the solution?",
+      "options": [
+        "A. Application Insights in Azure Monitor",
+        "B. metric alerts in Azure Monitor",
+        "C. Multivariate Anomaly Detection",
+        "D. Univariate Anomaly Detection"
+      ],
+      "correct": "C. Multivariate Anomaly Detection"
+    }
+    
+]
