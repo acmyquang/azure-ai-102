@@ -1,0 +1,151 @@
+<div class="container">
+  <h1 class="text-center my-4">Quiz App Azure-AI-102</h1>
+
+  <div *ngIf="!isSubmitted">
+    <!-- Hiển thị câu hỏi và các lựa chọn -->
+    <div *ngFor="let question of getCurrentQuestions(); let i = index">
+      <pre class="bold-title" [innerHTML]="formatTextWithLineBreaks(question.title)"></pre>
+      <p [innerHTML]="formatTextWithLineBreaks(question.question)"></p>
+      <img *ngIf="question.images" [src]="question.images" alt="Question Image">
+      <ul>
+        <li *ngFor="let option of question.options">
+          <label>
+            <!-- <input type="radio" name="question{{i}}" [value]="option" [(ngModel)]="userAnswers[(currentPage - 1) * questionsPerPage + i]">
+            {{ option }} -->
+            <input 
+              [type]="isArray(question.correct) ? 'checkbox' : 'radio'" 
+              [name]="'question' + i" 
+              [value]="option" 
+              [checked]="isSelectedAnswer((currentPage - 1) * questionsPerPage + i, option)"
+              (change)="handleAnswer((currentPage - 1) * questionsPerPage + i, option, isArray(question.correct))">
+            {{ option }}
+          </label>
+        </li>
+      </ul>
+    </div>
+    <!-- Nút gửi câu trả lời -->
+    <button (click)="submitAnswers()" class="btn btn-primary">Submit</button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" tabindex="-1" role="dialog" [ngClass]="{ 'show': showModal }" [style.display]="showModal ? 'block' : 'none'">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Thông báo</h5>
+          <button type="button" class="btn-close" aria-label="Close" (click)="hideModal()"></button>
+        </div>
+        <div class="modal-body">
+          <p>Vui lòng chọn câu trả lời cho tất cả các câu hỏi trước khi gửi.</p>
+          <p>Bạn có muốn xác nhận khi chưa chọn hết tất cả câu hỏi trước khi gửi không?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="hideModal()">Đóng</button>
+          <button type="button" class="btn btn-primary" (click)="confirmSubmit()">Xác nhận</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div *ngIf="isSubmitted">
+    <h2>Results: {{ numCorrect }} / {{ questionsData.length }}</h2>
+    <ul>
+      <ng-container *ngFor="let question of questionsData; let qIndex = index">
+        <li>
+          {{ question.question }}
+          <ul>
+            <ng-container *ngFor="let option of question.options; let oIndex = index">
+              <li [ngClass]="{
+              'correct-answer': isCorrectAnswer(qIndex, option) && isSelectedAnswer(qIndex, option),
+              'wrong-answer': !isCorrectAnswer(qIndex, option) && isSelectedAnswer(qIndex, option),
+              'unselected-answer': !isSelectedAnswer(qIndex, option)
+              }">
+              {{ option }}
+              </li>
+              </ng-container>
+          </ul>
+        </li>
+        <li *ngIf="userAnswers && userAnswers[qIndex]">
+          Your answer: 
+          <ng-container *ngIf="isArray(userAnswers[qIndex])">
+            {{ getJoinedUserAnswers(qIndex) }}
+          </ng-container>
+          <ng-container *ngIf="!isArray(userAnswers[qIndex])">
+            {{ userAnswers[qIndex] }}
+          </ng-container>
+          <span *ngIf="isCorrectAnswer(qIndex, userAnswers[qIndex])">
+            (Correct)
+          </span>
+          <span *ngIf="isWrongAnswer(qIndex, userAnswers[qIndex])">
+            (Incorrect, correct answer: 
+            <ng-container *ngIf="isArray(question.correct)">
+              {{ question.correct.join(', ') }}
+            </ng-container>
+            <ng-container *ngIf="!isArray(question.correct)">
+              {{ question.correct }}
+            </ng-container>
+            )
+          </span>
+        </li>
+        
+        <hr>
+      </ng-container>
+    </ul>
+    <button (click)="restartQuiz()" class="btn btn-primary">Start</button>
+  </div> -->
+<div *ngIf="isSubmitted">
+    <h2>Results: {{ numCorrect }} / {{ questionsData.length }}</h2>
+    <ul>
+      <ng-container *ngFor="let question of questionsData; let qIndex = index">
+        <li>
+          <p [innerHTML]="formatTextWithLineBreaks(question.question)"></p>
+          <img *ngIf="question.images" [src]="question.images" alt="Question Image">
+          <ul>
+            <ng-container *ngFor="let option of question.options; let oIndex = index">
+              <li [ngClass]="{
+                'correct-answer': isCorrectAnswer(qIndex, option) && isSelectedAnswer(qIndex, option),
+                'unselected-correct-answer': isCorrectAnswer(qIndex, option) && !isSelectedAnswer(qIndex, option),
+                'wrong-answer': isWrongAnswer(qIndex, option) && isSelectedAnswer(qIndex, option)
+                }">
+                {{ option }}
+                </li>
+            </ng-container>
+          </ul>
+        </li>
+        <li *ngIf="userAnswers && userAnswers[qIndex]" class="font-weight-bold">
+          Your answer: {{ formatAnswersWithSpacing(userAnswers[qIndex]) }}
+          <span *ngIf="isCorrectAnswer(qIndex, userAnswers[qIndex])" class="correct-answer">
+            (Correct)
+          </span>
+          <span *ngIf="isWrongAnswer(qIndex, userAnswers[qIndex])" class="font-weight-bold wrong-answer">
+            (Incorrect) 
+          </span>
+          <span *ngIf="isWrongAnswer(qIndex, userAnswers[qIndex])" class="font-weight-bold">
+            <br>Correct answer: <span class="correct-answer">{{ formatAnswersWithSpacing(questionsData[qIndex].correct) }}</span>
+          </span>
+        </li>
+        <hr>
+      </ng-container>
+    </ul>
+    <button (click)="restartQuiz()" class="btn btn-primary">Start</button>
+  </div>
+  <nav>
+    <ul class="pagination justify-content-center">
+      <li class="page-item" [class.disabled]="currentPage === 1">
+        <button class="page-link" (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === maxPage()">
+        <button class="page-link" (click)="nextPage()" [disabled]="currentPage === maxPage()">Next</button>
+      </li>
+    </ul>
+    <div class="scroll-buttons">
+      <button class="btn btn-primary m-2" (click)="scrollToTop()">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+    
+      <button class="btn btn-primary m-2" (click)="scrollToBottom()">
+        <i class="bi bi-arrow-down"></i>
+      </button>
+    </div>    
+  </nav>
+</div>
