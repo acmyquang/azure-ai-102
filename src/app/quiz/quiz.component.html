@@ -5,7 +5,7 @@
     <!-- Hiển thị câu hỏi và các lựa chọn -->
     <div *ngFor="let question of getCurrentQuestions(); let i = index">
       <pre class="bold-title" [innerHTML]="formatTextWithLineBreaks(question.title)"></pre>
-      <p [innerHTML]="formatTextWithLineBreaks(question.question)"></p>
+      <strong>{{ question.questionNumber }}</strong><p [innerHTML]="formatTextWithLineBreaks(question.question)"></p>
       <img *ngIf="question.images" [src]="question.images" alt="Question Image">
       <ul>
         <li *ngFor="let option of question.options">
@@ -133,6 +133,11 @@
     <ul class="pagination justify-content-center">
       <li class="page-item" [class.disabled]="currentPage === 1">
         <button class="page-link" (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+      </li>
+      <li class="page-item">
+        <span class="page-link">
+          Page {{ currentPage }} of {{ maxPage() }}
+        </span>
       </li>
       <li class="page-item" [class.disabled]="currentPage === maxPage()">
         <button class="page-link" (click)="nextPage()" [disabled]="currentPage === maxPage()">Next</button>

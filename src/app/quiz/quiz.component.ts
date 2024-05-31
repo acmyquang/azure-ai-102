@@ -7,6 +7,7 @@ interface Question {
   images: string;
   options: string[];
   correct: string | string[];
+  questionNumber: number;
 }
 
 @Component({
@@ -22,6 +23,7 @@ export class QuizComponent implements OnInit {
   isSubmitted: boolean = false;
   showModal: boolean = false;
   numCorrect: number = 0;
+  
 
   constructor(private http: HttpClient) {}
 
