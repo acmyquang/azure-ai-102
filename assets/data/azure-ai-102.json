@@ -305,7 +305,7 @@
       "C. an Azure Machine Learning Designer pipeline",
       "D. a new Cognitive Services resource that uses the S0 pricing tier"
   ],
-  "correct": "D. a new Cognitive Services resource that uses the S0 pricing tier"
+  "correct": "B. a free (Limited enrichments) Cognitive Services resource"
 },
 {
   "questionNumber": "Question 26",
@@ -468,5 +468,476 @@
     "D. Univariate Anomaly Detection"
   ],
   "correct": "C. Multivariate Anomaly Detection"
+},
+{
+  "questionNumber": "Question 51",
+  "question": "You have an app named App1 that uses an Azure Cognitive Services model to identify anomalies in a time series data stream.\nYou need to run App1 in a location that has limited connectivity. The solution must minimize costs.\nWhat should you use to host the model?",
+  "options": [
+    "A. Azure Kubernetes Service (AKS)",
+    "B. Azure Container Instances",
+    "C. a Kubernetes cluster hosted in an Azure Stack Hub integrated system",
+    "D. the Docker Engine"
+  ],
+  "correct": "B. Azure Container Instances"
+},
+{
+  "questionNumber": "Question 52",
+  "question": "You have an Azure Cognitive Search resource named Search1 that is used by multiple apps.\nYou need to secure Search1. The solution must meet the following requirements:\n• Prevent access to Search1 from the internet.\n• Limit the access of each app to specific queries.\nWhat should you do? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question52.png",
+  "options": [
+    "A. Configure an IP firewall",
+    "B. Create a private endpoint",
+    "C. Use Azure roles",
+    "D. Create a private endpoint",
+    "E. Use Azure roles",
+    "F. Use key authentication"
+  ],
+  "correct": ["B. Create a private endpoint", "F. Use key authentication"]
+},
+{
+  "questionNumber": "Question 53",
+  "question": "You are building a solution that will detect anomalies in sensor data from the previous 24 hours.\nYou need to ensure that the solution scans the entire dataset, at the same time, for anomalies.\nWhich type of detection should you use?",
+  "options": [
+    "A. batch",
+    "B. streaming",
+    "C. change point"
+  ],
+  "correct": "A. batch"
+},
+{
+  "questionNumber": "Question 54",
+  "question": "You are building an app that will scan confidential documents and use the Language service to analyze the contents.\nYou provision an Azure Cognitive Services resource.\nYou need to ensure that the app can make requests to the Language service endpoint. The solution must ensure that confidential documents remain on-premises.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+  "images": "assets/images/question54.png",
+  "options": [
+    "A. Run the container and specify an App ID and Client Secret.",
+    "B. Provision an on-premises Kubernetes cluster that is isolated from the internet.",
+    "C. Pull an image from the Microsoft Container Registry (MCR).",
+    "D. Run the container and specify an API key and the Endpoint URL of the Cognitive Services resource.",
+    "E. Provision an on-premises Kubernetes cluster that has internet connectivity.",
+    "F. Pull an image from Docker Hub.",
+    "G. Provision an Azure Kubernetes Service (AKS) resource."
+  ],
+  "correct": [
+    "B. Provision an on-premises Kubernetes cluster that is isolated from the internet.", 
+    "C. Pull an image from the Microsoft Container Registry (MCR).",
+    "D. Run the container and specify an API key and the Endpoint URL of the Cognitive Services resource."
+  ]
+},
+{
+  "questionNumber": "Question 55",
+  "question": "You have an Azure subscription that has the following configurations:\n• Subscription ID: 8d3591aa-96b8-4737-ad09-00f9b1ed35ad\n• Tenant ID: 3edfe572-cb54-3ced-ae12-c5c177f39a12\nYou plan to create a resource that will perform sentiment analysis and optical character recognition (OCR).\nYou need to use an HTTP request to create the resource in the subscription. The solution must use a single key and endpoint.\nHow should you complete the request? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question55.png",
+  "options": [
+    "A. subscriptions/3edfe5T2-cb54-3ced-ae12-c5C177138a12",
+    "B. subscriptions/8d3591aa-96b8-4737-ad09-00f9b1ed35ad",
+    "C. tenant/3edfe572-ch54-3ced-ae12-c5c177139a12",
+    "D. tenant/Bd3531aa-36hä-4737-ad09-00f3h1ed35ad",
+    "E. Microsoft.ApiManagement",
+    "F. Microsoft.CognitiveServices",
+    "G. Microsoft.ContainerService",
+    "H. Microsoft.KeyVault"
+  ],
+  "correct": ["B. subscriptions/8d3591aa-96b8-4737-ad09-00f9b1ed35ad", "F. Microsoft.CognitiveServices"]
+},
+{
+  "questionNumber": "Question 56",
+  "question": "You have an Azure subscription that contains an Anomaly Detector resource.\nYou deploy a Docker host server named Server1 to the on-premises network.\nYou need to host an instance of the Anomaly Detector service on Server1.\nWhich parameter should you include in the docker run command?",
+  "options": [
+    "A. Fluentd",
+    "B. Billing",
+    "C. Http Proxy",
+    "D. Mounts"
+  ],
+  "correct": "B. Billing"
+},
+{
+  "questionNumber": "Question 57",
+  "question": "You are building an app that will use the Speech service.\nYou need to ensure that the app can authenticate to the service by using a Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra, token.\nWhich two actions should you perform? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. Enable a virtual network service endpoint.",
+    "B. Configure a custom subdomain.",
+    "C. Request an X.509 certificate.",
+    "D. Create a private endpoint.",
+    "E. Create a Conditional Access policy."
+  ],
+  "correct": ["B. Configure a custom subdomain.", "E. Create a Conditional Access policy."]
+},
+{
+  "questionNumber": "Question 58",
+  "question": "You plan to deploy an Azure OpenAI resource by using an Azure Resource Manager (ARM) template.\nYou need to ensure that the resource can respond to 600 requests per minute.\nHow should you complete the template? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point",
+  "images":"assets/images/question58.png",
+  "options": [
+    "A. capacity",
+    "B. count",
+    "C. maxValue",
+    "D. size",
+    "E. 1",
+    "F. 60",
+    "G. 100",
+    "H. 600"
+  ],
+  "correct": ["A. capacity", "H. 600"]
+},
+{
+  "questionNumber": "Question 59",
+  "question": "You have an app that manages feedback.\nYou need to ensure that the app can detect negative comments by using the Sentiment Analysis API in Azure AI Language. The solution must ensure that the managed feedback remains on your company’s internal network.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.\nNOTE: More than one order of answer choices is correct. You will receive credit for any of the correct orders you select.",
+  "images":"assets/images/question59.png",
+  "options": [
+    "A. Identify the Language service endpoint URL and query the prediction endpoint.",
+    "B. Provision the Language service resource in Azure.",
+    "C. Run the container and query the prediction endpoint.",
+    "D. Deploy a Docker container to an on-premises server.",
+    "E. Deploy a Docker container to an Azure container instance."
+  ],
+  "correct": [
+    "B. Provision the Language service resource in Azure.", 
+    "D. Deploy a Docker container to an on-premises server.", 
+    "C. Run the container and query the prediction endpoint."
+  ]
+},
+{
+  "questionNumber": "Question 60",
+  "question": "You have an Azure OpenAI resource named AI1 that hosts three deployments of the GPT 3.5 model. Each deployment is optimized for a unique workload.\nYou plan to deploy three apps. Each app will access AI1 by using the REST API and will use the deployment that was optimized for the app's intended workload.\nYou need to provide each app with access to AI1 and the appropriate deployment. The solution must ensure that only the apps can access AI1.\nWhat should you use to provide access to AI1, and what should each app use to connect to its appropriate deployment? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question60.png",
+  "options": [
+    "A. An API key",
+    "B. A bearer token",
+    "C. A shared access signature (SAS) token",
+    "D. An API key",
+    "E. A deployment endpoint",
+    "F. A deployment name",
+    "G. A deployment type"
+  ],
+  "correct": ["A. An API key", "E. A deployment endpoint"]
+},
+{
+  "questionNumber": "Question 61",
+  "question": "You build a bot by using the Microsoft Bot Framework SDK.\nYou start the bot on a local computer.\nYou need to validate the functionality of the bot.\nWhat should you do before you connect to the bot?",
+  "options": [
+    "A. Run the Bot Framework Emulator.",
+    "B. Run the Bot Framework Composer.",
+    "C. Register the bot with Azure Bot Service.",
+    "D. Run Windows Terminal."
+  ],
+  "correct": "A. Run the Bot Framework Emulator."
+},
+{
+  "questionNumber": "Question 62",
+  "question": "You have an Azure OpenAI model named AI1.\nYou are building a web app named App1 by using the Azure OpenAI SDK.\nYou need to configure App1 to connect to AI1.\nWhat information must you provide?",
+  "options": [
+    "A. the endpoint, key, and model name",
+    "B. the deployment name, key, and model name",
+    "C. the deployment name, endpoint, and key",
+    "D. the endpoint, key, and model type"
+  ],
+  "correct": "C. the deployment name, endpoint, and key"
+},
+{
+  "questionNumber": "Question 63",
+  "question": "You are building a solution in Azure that will use Azure Cognitive Service for Language to process sensitive customer data.\nYou need to ensure that only specific Azure processes can access the Language service. The solution must minimize administrative effort.\nWhat should you include in the solution?",
+  "options": [
+    "A. IPsec rules",
+    "B. Azure Application Gateway",
+    "C. a virtual network gateway",
+    "D. virtual network rules"
+  ],
+  "correct": "D. virtual network rules"
+},
+{
+  "questionNumber": "Question 64",
+  "question": "You plan to perform predictive maintenance.\nYou collect IoT sensor data from 100 industrial machines for a year. Each machine has 50 different sensors that generate data at one-minute intervals. In total, you have 5,000 time series datasets.\nYou need to identify unusual values in each time series to help predict machinery failures.\nWhich Azure service should you use?",
+  "options": [
+    "A. Azure AI Computer Vision",
+    "B. Cognitive Search",
+    "C. Azure AI Document Intelligence",
+    "D. Azure AI Anomaly Detector"
+  ],
+  "correct": "D. Azure AI Anomaly Detector"
+},
+{
+  "questionNumber": "Question 66",
+  "question": "You are developing a system that will monitor temperature data from a data stream. The system must generate an alert in response to atypical values. The solution must minimize development effort.\nWhat should you include in the solution?",
+  "options": [
+    "A. Multivariate Anomaly Detection",
+    "B. Azure Stream Analytics",
+    "C. metric alerts in Azure Monitor",
+    "D. Univariate Anomaly Detection"
+  ],
+  "correct": "D. Univariate Anomaly Detection"
+},
+{
+  "questionNumber": "Question 67",
+  "question": "You have a Microsoft OneDrive folder that contains a 20-GB video file named File1.avi.\nYou need to index File1.avi by using the Azure Video Indexer website.\nWhat should you do?",
+  "options": [
+    "A. Upload File1.avi to the www.youtube.com webpage, and then copy the URL of the video to the Azure AI Video Indexer website.",
+    "B. Download File1.avi to a local computer, and then upload the file to the Azure AI Video Indexer website.",
+    "C. From OneDrive, create a download link, and then copy the link to the Azure AI Video Indexer website.",
+    "D. From OneDrive, create a sharing link for File1.avi, and then copy the link to the Azure AI Video Indexer website."
+  ],
+  "correct": "C. From OneDrive, create a download link, and then copy the link to the Azure AI Video Indexer website."
+},
+{
+  "questionNumber": "Question 68",
+  "question": "You have an Azure subscription that contains an Azure AI Service resource named CSAccount1 and a virtual network named VNet1. CSAaccount1 is connected to VNet1.\nYou need to ensure that only specific resources can access CSAccount1. The solution must meet the following requirements:\n• Prevent external access to CSAccount1.\n• Minimize administrative effort.\nWhich two actions should you perform? Each correct answer presents part of the solution.\nNOTE: Each correct answer is worth one point.",
+  "options": [
+    "A. In VNet1, enable a service endpoint for CSAccount1.",
+    "B. In CSAccount1, configure the Access control (IAM) settings.",
+    "C. In VNet1, modify the virtual network settings.",
+    "D. In VNet1, create a virtual subnet.",
+    "E. In CSAccount1, modify the virtual network settings."
+  ],
+  "correct": ["A. In VNet1, enable a service endpoint for CSAccount1.", "E. In CSAccount1, modify the virtual network settings."]
+},
+{
+  "questionNumber": "Question 69",
+  "question": "You are building an internet-based training solution. The solution requires that a user's camera and microphone remain enabled.\nYou need to monitor a video stream of the user and detect when the user asks an instructor a question. The solution must minimize development effort.\nWhat should you include in the solution?",
+  "options": [
+    "A. speech-to-text in the Azure AI Speech service",
+    "B. language detection in Azure AI Language Service",
+    "C. the Face service in Azure AI Vision",
+    "D. object detection in Azure AI Custom Vision"
+  ],
+  "correct": "A. speech-to-text in the Azure AI Speech service"
+},
+{
+  "questionNumber": "Question 1 - Topic 2",
+  "images":"assets/images/question1-topic2.png",
+  "question": "You are developing an application that will use the Computer Vision client library. The application has the following code.\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+  "statements": [
+    {
+      "text": "The code will perform face recognition.",
+      "correct": "no"
+    },
+    {
+      "text": "The code will list tags and their associated confidence.",
+      "correct": "yes"
+    },
+    {
+      "text": "The code will read a file from the local file system.",
+      "correct": "yes"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 2 - Topic 2",
+  "question": "You are developing a method that uses the Computer Vision client library. The method will perform optical character recognition (OCR) in images. The method has the following code.\nDuring testing, you discover that the call to the GetReadResultAsync method occurs before the read operation is complete.\nYou need to prevent the GetReadResultAsync method from proceeding until the read operation is complete.\nWhich two actions should you perform? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question2-topic2.png",
+  "options": [
+    "A. Remove the Guid.Parse(operationId) parameter.",
+    "B. Add code to verify the results.Status value.",
+    "C. Add code to verify the status of the txtHeaders.Status value.",
+    "D. Wrap the call to GetReadResultAsync within a loop that contains a delay."
+  ],
+  "correct": ["B. Add code to verify the results.Status value.", "D. Wrap the call to GetReadResultAsync within a loop that contains a delay."]
+},
+{
+  "questionNumber": "Question 3 - Topic 2",
+  "question": "You have a Computer Vision resource named contoso1 that is hosted in the West US Azure region.\nYou need to use contoso1 to make a different size of a product photo by using the smart cropping feature.\nHow should you complete the API URL? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question3-topic2.png",
+  "options": [
+    "A. https://api.projectoxford.ai",
+    "B. https://contoso1.cognitiveservices.azure.com",
+    "C. https://westus.api.cognitive.microsoft.com",
+    "D. areaOfinterest",
+    "E. detect",
+    "F. generateThumbnail"
+  ],
+  "correct": ["B. https://contoso1.cognitiveservices.azure.com", "F. generateThumbnail"]
+},
+{
+  "questionNumber": "Question 4 - Topic 2",
+  "question": "You are developing a webpage that will use the Azure Video Analyzer for Media (previously Video Indexer) service to display videos of internal company meetings. \nYou embed the Player widget and the Cognitive Insights widget into the page. \nYou need to configure the widgets to meet the following requirements:\n- Ensure that users can search for keywords.\n- Display the names and faces of people in the video.\n- Show captions in the video in English (United States). \nHow should you complete the URL for each widget? To answer, drag the appropriate values to the correct targets. Each value may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content. \nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question4-topic2.png",
+  "options": [
+    "A. en-US",
+    "B. false",
+    "C. people, keywords",
+    "D. people, search",
+    "E. search",
+    "F. true"
+  ],
+  "correct":[ "C. people, keywords", "E. search", "F. true", "A. en-US"]
+},
+{
+  "questionNumber": "Question 5 - Topic 2",
+  "question": "You train a Custom Vision model to identify a company's products by using the Retail domain.\nYou plan to deploy the model as part of an app for Android phones.\nYou need to prepare the model for deployment.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+  "options": [
+    "A. Change the model domain.",
+    "B. Retrain the model.",
+    "C. Test the model.",
+    "D. Export the model."
+  ],
+  "correct": [ "C. Test the model.", "D. Export the model.", "B. Retrain the model."]
+},
+{
+  "questionNumber": "Question 6 - Topic 2",
+  "question": "You are developing an application to recognize employees' faces by using the Face Recognition API. Images of the faces will be accessible from a URI endpoint.\nThe application has the following code.\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question6-topic2.png",
+  "statements": [
+    {
+      "text": "The code will add a face image to a person object in a person group.",
+      "correct": "yes"
+    },
+    {
+      "text": "The code will work for up to 10,000 people.",
+      "correct": "yes"
+    },
+    {
+      "text": "add_face can be called multiple times to add multiple face images to a person object.",
+      "correct": "yes"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 7 - Topic 2",
+  "question": "You have a Custom Vision resource named acvdev in a development environment.\nYou have a Custom Vision resource named acvprod in a production environment.\nIn acvdev, you build an object detection model named obj1 in a project named proj1.\nYou need to move obj1 to acvprod.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+  "images":"assets/images/question7-topic2.png",
+  "options": [
+    "A. Use the ExportProject endpoint on acvdev.",
+    "B. Use the ImportProject endpoint on acvprod.",
+    "C. Use the GetProjects endpoint on acvdev.",
+    "D. Use the ExportIteration endpoint on acvdev.",
+    "E. Use the GetIterations endpoint on acvdev.",
+    "F. Use the UpdateProject endpoint on acvprod."
+  ],
+  "correct": [
+    "C. Use the GetProjects endpoint on acvdev.",
+    "A. Use the ExportProject endpoint on acvdev.",
+    "B. Use the ImportProject endpoint on acvprod."
+  ]
+},
+{
+  "questionNumber": "Question 8 - Topic 2",
+  "question": "You are developing an application that will recognize faults in components produced on a factory production line. The components are specific to your business.\nYou need to use the Custom Vision API to help detect common faults.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+  "images":"assets/images/question8-topic2.png",
+  "options": [
+    "A. Train the classifier model.",
+    "B. Upload and tag images.",
+    "C. Initialize the training dataset.",
+    "D. Train the object detection model.",
+    "E. Create a project."
+  ],
+  "correct": [
+    "E. Create a project.",
+    "B. Upload and tag images.",
+    "A. Train the classifier model."
+  ]
+},
+{
+  "questionNumber": "Question 9 - Topic 2",
+  "question": "You are building a model that will be used in an iOS app.\nYou have images of cats and dogs. Each image contains either a cat or a dog.\nYou need to use the Custom Vision service to detect whether the images is of a cat or a dog.\nHow should you configure the project in the Custom Vision portal? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question9-topic2.png",
+  "options": [
+    "Classification.",
+    "Object Detection",
+    "IMulticlass (Single tag per Image)",
+    "Multilabel (Multiple tags per image)",
+    "Audit",
+    "Food",
+    "General",
+    "General (compact)",
+    "Landmarks",
+    "Landmarks (compact)",
+    "Retail",
+    "Retail (compact)"
+  ],
+  "correct": [ "Classification.", "IMulticlass (Single tag per Image)", "General"]
+},
+{
+  "questionNumber": "Question 10 - Topic 2",
+  "question": "You have an Azure Video Analyzer for Media (previously Video Indexer) service that is used to provide a search interface over company videos on your company's website.\nYou need to be able to search for videos based on who is present in the video.\nWhat should you do?",
+  "options": [
+    "A. Create a person model and associate the model to the videos.",
+    "B. Create person objects and provide face images for each object.",
+    "C. Invite the entire staff of the company to Video Indexer.",
+    "D. Edit the faces in the videos.",
+    "E. Upload names to a language model."
+  ],
+  "correct": "A. Create a person model and associate the model to the videos."
+},
+{
+  "questionNumber": "Question 11 - Topic 2",
+  "question": "You use the Custom Vision service to build a classifier.\nAfter training is complete, you need to evaluate the classifier.\nWhich two metrics are available for review? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. recall",
+    "B. F-score",
+    "C. weighted accuracy",
+    "D. precision",
+    "E. area under the curve (AUC)"
+  ],
+  "correct": [
+    "A. recall",
+    "D. precision"
+  ]
+},
+{
+  "questionNumber": "Question 12 - Topic 2",
+  "question": "You are developing a call to the Face API. The call must find similar faces from an existing list named employeefaces. The employeefaces list contains 60,000 images.\nHow should you complete the body of the HTTP request? To answer, drag the appropriate values to the correct targets. Each value may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question12-topic2.png",
+  "options": [
+    "faceListId",
+    "LargeFaceListId",
+    "matchFace",
+    "matchPerson"
+  ],
+  "correct": [
+    "LargeFaceListId",
+    "matchFace"
+  ]
+},
+{
+  "questionNumber": "Question 13 - Topic 2",
+  "question": "You are developing a photo application that will find photos of a person based on a sample image by using the Face API.\nYou need to create a POST request to find the photos.\nHow should you complete the request? To answer, drag the appropriate values to the correct targets. Each value may be used once, more than once, or not at all.\nYou may need to drag the split bar between panes or scroll to view content.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question13-topic2.png",
+  "options": [
+    "detect",
+    "findsimilars",
+    "group",
+    "identify",
+    "matchFace",
+    "matchPerson",
+    "verify"
+  ],
+  "correct": [
+    "matchPerson", "findsimilars"
+  ]
+},
+{
+  "questionNumber": "Question 14 - Topic 2",
+  "question": "You develop a test method to verify the results retrieved from a call to the Computer Vision API. The call is used to analyze the existence of company logos in images. The call returns a collection of brands named brands.\nYou have the following code segment.\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question15-topic2.png",
+  "statements": [
+    {
+      "text": "The code will return the name of each detected brand with a confidence equal to or higher than 75 percent.",
+      "correct": "yes"
+    },
+    {
+      "text": "The code will return coordinates for the top-left corner of the rectangle that contains the brand logo of the displayed brands.",
+      "correct": "yes"
+    },
+    {
+      "text": "The code will return coordinates for the bottom-right corner of the rectangle that contains the brand logo of the displayed brands.",
+      "correct": "no"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 15 - Topic 2",
+  "question": "You develop an application that uses the Face API.\nYou need to add multiple images to a person group.\nHow should you complete the code? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question15-topic2.png",
+  "options": [
+    "File",
+    "Stream",
+    "Uri",
+    "Url",
+    "AddFaceFromStreamAsync",
+    "AddaFaceFromUrlAsync",
+    "CreateAsync",
+    "GetAsync"
+  ],
+  "correct": [
+    "Stream",
+    "AddFaceFromStreamAsync"
+  ]
 }
 ]
