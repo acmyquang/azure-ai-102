@@ -5,8 +5,32 @@
     <!-- Hiển thị câu hỏi và các lựa chọn -->
     <div *ngFor="let question of getCurrentQuestions(); let i = index">
       <pre class="bold-title" [innerHTML]="formatTextWithLineBreaks(question.title)"></pre>
-      <strong>{{ question.questionNumber }}</strong><p [innerHTML]="formatTextWithLineBreaks(question.question)"></p>
+      <strong>{{ question.questionNumber }}</strong>
+      <p [innerHTML]="formatTextWithLineBreaks(question.question)"></p>
       <img *ngIf="question.images" [src]="question.images" alt="Question Image">
+      <!-- Hiển thị bảng Statements với Yes/No -->
+      <div *ngIf="question.statements">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Statements</th>
+              <th scope="col">Yes</th>
+              <th scope="col">No</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let statement of question.statements">
+              <td>{{ statement.text }}</td>
+              <td>
+                <input type="radio" [name]="'question' + i + 'statement' + statement.text" value="yes" [(ngModel)]="statement.userAnswer">
+              </td>
+              <td>
+                <input type="radio" [name]="'question' + i + 'statement' + statement.text" value="no" [(ngModel)]="statement.userAnswer">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <ul>
         <li *ngFor="let option of question.options">
           <label>
@@ -98,6 +122,7 @@
     <ul>
       <ng-container *ngFor="let question of questionsData; let qIndex = index">
         <li>
+          <strong>{{ question.questionNumber }}</strong>
           <p [innerHTML]="formatTextWithLineBreaks(question.question)"></p>
           <img *ngIf="question.images" [src]="question.images" alt="Question Image">
           <ul>
@@ -124,6 +149,29 @@
             <br>Correct answer: <span class="correct-answer">{{ formatAnswersWithSpacing(questionsData[qIndex].correct) }}</span>
           </span>
         </li>
+        <!-- Hiển thị kết quả của statements -->
+        <div *ngIf="question.statements">
+          <h4>Statements</h4>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Statements</th>
+                <th scope="col">Your Answer</th>
+                <th scope="col">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let statement of question.statements">
+                <td>{{ statement.text }}</td>
+                <td>{{ statement.userAnswer }}</td>
+                <td [ngClass]="{'text-success': statement.isCorrect, 'text-danger': !statement.isCorrect}">
+                  {{ statement.isCorrect ? 'Correct' : 'Incorrect' }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
         <hr>
       </ng-container>
     </ul>

@@ -8,8 +8,15 @@ interface Question {
   options: string[];
   correct: string | string[];
   questionNumber: number;
+  text: string;
+  statements?: Statement[];
 }
-
+interface Statement {
+  text: string;
+  userAnswer?: string;
+  isCorrect?: boolean;
+  correct?: string;
+}
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
@@ -53,7 +60,7 @@ export class QuizComponent implements OnInit {
     const userAnswer = this.userAnswers[qIndex];
     return Array.isArray(userAnswer) ? userAnswer.join(', ') : userAnswer;
     }
-    
+  
 
   // handleAnswer(questionIndex: number, answer: string): void {
   //   this.userAnswers[questionIndex] = answer;
@@ -84,21 +91,43 @@ return Array.isArray(value);
     return Object.keys(this.userAnswers).length;
   }
 
-  submitAnswers(): void {
-    const unansweredQuestions = this.questionsData.filter((question, index) => !this.userAnswers[index]);
-    if (unansweredQuestions.length > 0) {
-      this.showModalFunction();
-    } else {
-      this.calculateResults();
-      this.isSubmitted = true;
-    }
-  }
-
-  // calculateResults(): void {
-  //   this.numCorrect = this.questionsData.reduce((correctCount, question, index) => {
-  //     return correctCount + (this.userAnswers[index] === question.correct ? 1 : 0);
-  //   }, 0);
+  // submitAnswers(): void {
+  //   const unansweredQuestions = this.questionsData.filter((question, index) => !this.userAnswers[index]);
+  //   if (unansweredQuestions.length > 0) {
+  //     this.showModalFunction();
+  //   } else {
+  //     this.calculateResults();
+  //     this.isSubmitted = true;
+  //   }
   // }
+  submitAnswers(): void {
+    // Kiểm tra xem tất cả các câu hỏi và phát biểu đã được trả lời hay chưa
+    const allQuestionsAnswered = this.questionsData.every((question, index) => {
+    // Kiểm tra nếu câu hỏi có các phát biểu và tất cả các phát biểu đã được trả lời
+    const statementsAnswered = question.statements ? question.statements.every(statement => {
+    const answered = !!statement.userAnswer;
+    if (!answered) {
+    console.log(`Statement not answered: ${statement.text}`);
+    }
+    return answered;
+    }) : true;
+    // Kiểm tra nếu câu hỏi đã được trả lời
+    const questionAnswered = this.userAnswers[index] !== undefined;
+    if (!questionAnswered) {
+    console.log(`Question not answered: ${question.question}`);
+    }
+    return statementsAnswered && questionAnswered;
+    });
+    
+    if (!allQuestionsAnswered) {
+    // Nếu có câu hỏi chưa được trả lời, hiển thị modal
+    this.showModalFunction();
+    } else {
+    // Nếu tất cả câu hỏi đã được trả lời, tiến hành tính toán kết quả
+    this.calculateResults();
+    this.isSubmitted = true;
+    }
+    }
   formatAnswersWithSpacing(answers: string | string[]): string {
     if (Array.isArray(answers)) {
       return answers.map(answer => answer.trim()).join(', ');
@@ -106,17 +135,47 @@ return Array.isArray(value);
     return answers;
   }
   
+  // calculateResults(): void {
+  //   this.numCorrect = this.questionsData.reduce((correctCount, question, index) => {
+  //     const userAnswer = this.userAnswers[index];
+  //     const correctAnswer = question.correct;
+  //     if (Array.isArray(correctAnswer)) {
+  //       return correctCount + (Array.isArray(userAnswer) && this.arraysEqual(userAnswer, correctAnswer) ? 1 : 0);
+  //     } else {
+  //       return correctCount + (userAnswer === correctAnswer ? 1 : 0);
+  //     }
+  //   }, 0);
+  // }
+
   calculateResults(): void {
     this.numCorrect = this.questionsData.reduce((correctCount, question, index) => {
-      const userAnswer = this.userAnswers[index];
-      const correctAnswer = question.correct;
-      if (Array.isArray(correctAnswer)) {
-        return correctCount + (Array.isArray(userAnswer) && this.arraysEqual(userAnswer, correctAnswer) ? 1 : 0);
-      } else {
-        return correctCount + (userAnswer === correctAnswer ? 1 : 0);
-      }
+    const userAnswer = this.userAnswers[index];
+    const correctAnswer = question.correct;
+    let isCorrect = false;
+    
+    if (Array.isArray(correctAnswer)) {
+    if (Array.isArray(userAnswer)) {
+    isCorrect = correctAnswer.every(ans => userAnswer.includes(ans)) && userAnswer.length === correctAnswer.length;
+    }
+    } else {
+    isCorrect = userAnswer === correctAnswer;
+    }
+    
+    // Xử lý cho các phát biểu
+    if (question.statements) {
+    question.statements.forEach(statement => {
+    // So sánh trực tiếp giá trị của userAnswer với giá trị trong trường 'correct'
+    if (statement.userAnswer) {
+    statement.isCorrect = statement.userAnswer === statement.correct;
+    }
+    });
+    }
+    
+    return correctCount + (isCorrect ? 1 : 0);
     }, 0);
-  }
+    }
+  
+  
   arraysEqual(a: string[], b: string[]): boolean {
     if (a.length !== b.length) return false;
     a.sort();
