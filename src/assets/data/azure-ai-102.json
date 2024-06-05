@@ -1569,7 +1569,7 @@
   {
     "questionNumber": "Question 28 - Topic 3",
     "question": "You are developing an application that includes language translation.\nThe application will translate text retrieved by using a function named get_text_to_be_translated. The text can be in one of many languages. The content of the text must remain within the Americas Azure geography.\nYou need to develop code to translate the text to a single language.\nHow should you complete the code? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.\nHot Area:",
-    "images":"assets/images/question29-topic3.png",
+    "images":"assets/images/question28-topic3.png",
     "options": [
       "api.cognitive.microsofttranslator.com",
       "api-apc.cognitive.microsofttranslator.com",
