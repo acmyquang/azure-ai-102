@@ -85,10 +85,10 @@
         "B. Pull the Anomaly Detector container image.",
         "C. Distribute a docker run SCTIDE.",
         "D. Push the image to an Azure container registry",
-        "E. Bulld the image.",
+        "E. Build the image.",
         "F. Push the Image to Docker Hub."
     ],
-    "correct": ["A. Create a custom Dockerfile.", "E. Bulld the image.","D. Push the image to an Azure container registry","C. Distribute a docker run SCTIDE."]
+    "correct": ["A. Create a custom Dockerfile.", "E. Build the image.","D. Push the image to an Azure container registry","C. Distribute a docker run SCTIDE."]
 },
 {
   "questionNumber": "Question 8",
@@ -305,7 +305,7 @@
       "C. an Azure Machine Learning Designer pipeline",
       "D. a new Cognitive Services resource that uses the S0 pricing tier"
   ],
-  "correct": "B. a free (Limited enrichments) Cognitive Services resource"
+  "correct": "D. a new Cognitive Services resource that uses the S0 pricing tier"
 },
 {
   "questionNumber": "Question 26",
@@ -488,11 +488,12 @@
     "A. Configure an IP firewall",
     "B. Create a private endpoint",
     "C. Use Azure roles",
+    "--------------------------------",
     "D. Create a private endpoint",
     "E. Use Azure roles",
     "F. Use key authentication"
   ],
-  "correct": ["B. Create a private endpoint", "F. Use key authentication"]
+  "correct": ["B. Create a private endpoint", "E. Use Azure roles"]
 },
 {
   "questionNumber": "Question 53",
@@ -592,7 +593,7 @@
   "correct": [
     "B. Provision the Language service resource in Azure.", 
     "D. Deploy a Docker container to an on-premises server.", 
-    "C. Run the container and query the prediction endpoint."
+    "A. Identify the Language service endpoint URL and query the prediction endpoint."
   ]
 },
 {
@@ -768,7 +769,7 @@
     "C. Test the model.",
     "D. Export the model."
   ],
-  "correct": ["B. Retrain the model.", "C. Test the model.", "D. Export the model."]
+  "correct": ["A. Change the model domain.", "B. Retrain the model.", "D. Export the model."]
 },
 {
   "questionNumber": "Question 6 - Topic 2",
@@ -981,7 +982,7 @@
     "G. https://westus.api.cognitive.microsoft.com/vision/v3.2/describe?maxCandidates=1"
   ],  
   "correct": [
-    "B. https://westus.api.cognitive.microsoft.com/customwision/v3.1/prediction/projectId/classify/iterations/publishedName/image",
+    "C. https://westus.api.cognitive.microsoft.com/vision/v3.2/analyze/?visualFeatures=Adult,Descnption",
     "F. https://westus.api.cognitive.microsoft.com/vision/v3.2/analyze/?visualFeatures=Adult,Description"
   ]
 },
@@ -2228,7 +2229,321 @@
     "Azure AI Document Intelligence",
     "Azure AI Language"
   ]
+},
+{
+  "questionNumber": "Question 1 - Topic 8 - Testlet 1",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic8-testlet1.png",
+  "options": [
+    "Azure Blob storage",
+    "Custom Vision API",
+    "Azure Files",
+    "Conversational Language \nUnderstanding API",
+    "Translator API",
+    "Computer Vision API",
+    "Azure Cosmos DB"
+  ],
+  "correct": [
+    "Azure Blob storage",
+    "Custom Vision API",
+    "Translator API",
+    "Azure Files"
+  ]
+},
+{
+  "questionNumber": "Question 1 - Topic 9 - Testlet 2",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic9-testlet2.png",
+  "options": [
+    "1. Owner",
+    "2. Contributor",
+    "3. Cognitive Services User",
+    "4. Cognitive Services QnA Maker Read",
+    "5. Cognitive Services QnA Maker Editor",
+    "--------------------------------",
+    "Owner",
+    "Contributor",
+    "Cognitive Services User",
+    "Cognitive Services QnA Maker Read",
+    "Cognitive Services QnA Maker Editor",
+    "--------------------------------",
+    " Owner",
+    " Contributor",
+    " Cognitive Services User",
+    " Cognitive Services QnA Maker Read",
+    " Cognitive Services QnA Maker Editor"
+  ],
+  "correct": [
+    "3. Cognitive Services User",
+    "Cognitive Services QnA Maker Editor",
+    " Cognitive Services QnA Maker Read"
+  ]
+},
+{
+  "questionNumber": "Question 1 - Topic 10 - Testlet 3",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic10-testlet3.png",
+  "options": [
+    "Index the video by using the Azure Video Analyzer for Media (previously Video Indexer) API.",
+    "Upload the video to blob storage",
+    "Analyze the video by using the Computer Vision API.",
+    "Extract the transcript from Microsoft Stream.",
+    "Send the transcript to the Language Understanding API as an utterance.",
+    "Extract the transcipt from the Azure Video Analyzer for Media (previously Video Indexer) API.",
+    "Translate the transcript by using the Translator API",
+    "Upload the video to file storage."
+  ],
+  "correct": [
+    "Upload the video to blob storage",
+    "Index the video by using the Azure Video Analyzer for Media (previously Video Indexer) API.",
+    "Extract the transcipt from the Azure Video Analyzer for Media (previously Video Indexer) API.",
+    "Translate the transcript by using the Translator API"
+  ]
+},
+{
+  "questionNumber": "Question 2 - Topic 10 - Testlet 3",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question2-topic10-testlet3.png",
+  "options": [
+    "Dictionary",
+    "stream",
+    "string",
+    "VisualFeatureTypes.Description",
+    "VisualFeatureTypes.ImageType",
+    "VisualFeatureTypes.Objects",
+    "VisualFeatureTypes.Tag",
+    "var c = results.Brands.DetectedBrands[0]",
+    "var c = results.Description.Captions[0]",
+    "var c = results.Metadata[0]",
+    "var c = results.Objects[0]"
+  ],
+  "correct": [
+    "string",
+    "VisualFeatureTypes.Description",
+    "var c = results.Description.Captions[0]"
+  ]
+},
+{
+  "questionNumber": "Question 1 - Topic 11 - Testlet 4",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic11-testlet4.png",
+  "options": [
+    "Train a custom model",
+    "Label the sample documents",
+    "Create a new project and load sample documents",
+    "Create a composite model"
+  ],
+  "correct": [
+    "Create a new project and load sample documents",
+    "Label the sample documents",
+    "Train a custom model"
+  ]
+},
+{
+  "questionNumber": "Question 2 - Topic 11 - Testlet 4",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question2-topic11-testlet4.png",
+  "options": [
+    "A. Create a custom language model",
+    "B. Configure audio indexing for videos only",
+    "C. Enable multi-language detection for videos",
+    "D. Build a custom Person model for webinar presenters"
+  ],
+  "correct": "A. Create a custom language model"
+},
+{
+  "questionNumber": "Question 1 - Topic 12 - Testlet 5",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic12-testlet5.png",
+  "options": [
+    "api.cognitive.microsofttranslator.com",
+    "api-nam.cognitive.microsofttranslator.com",
+    "westuls.tts.speech.microsoft.com",
+    "westuls.tts.speech.microsoft.com",
+    "/detect",
+    "/languages",
+    "/text-to-speech",
+    "/translate"
+  ],
+  "correct": ["api-nam.cognitive.microsofttranslator.com", "/translate"]
+},
+{
+  "questionNumber": "Question 1 - Topic 13 - Testlet 6",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic13-testlet6.png",
+  "options": [
+    "A. documentResults.docType == 'prebuilt:receipt'",
+    "B. documentResults.fields.*.confidence < 0.7",
+    "C. documentResults.fields.ReceiptType.confidence > 0.7",
+    "D. documentResults.fields.MerchantName.confidence < 0.7"
+  ],
+  "correct": "B. documentResults.fields.*.confidence < 0.7"
+},
+{
+  "questionNumber": "Question 1 - Topic 14 - Testlet 7",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic14-testlet7.png",
+  "options": [
+    "A. Make API queries to the autocomplete endpoint and include suggesterName in the body.",
+    "B. Add a suggester that has the three product name fields as source fields.",
+    "C. Make API queries to the search endpoint and include the product name fields in the searchFields query parameter.",
+    "D. Add a suggester for each of the three product name fields.",
+    "E. Set the searchAnalyzer property for the three product name variants.",
+    "F. Set the analyzer property for the three product name variants."
+  ],
+  "correct": [
+    "A. Make API queries to the autocomplete endpoint and include suggesterName in the body.",
+    "B. Add a suggester that has the three product name fields as source fields.",
+    "F. Set the analyzer property for the three product name variants."
+  ]
+},
+{
+  "questionNumber": "Question 1 - Topic 15 - Testlet 8",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic15-testlet8.png",
+  "options": [
+    "A. /vision/v3.1/read/analyzeResults",
+    "B. /formrecognizer/v2.0/custom/models/{modelId}/analyze",
+    "C. /formrecognizer/v2.0/prebuilt/receipt/analyze",
+    "D. /vision/v3.1/describe",
+    "E. /vision/v3.1/read/analyze"
+  ],
+  "correct": [
+    "B. /formrecognizer/v2.0/custom/models/{modelId}/analyze",
+    "C. /formrecognizer/v2.0/prebuilt/receipt/analyze"
+  ]
+},
+{
+  "questionNumber": "Question 2 - Topic 15 - Testlet 8",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question2-topic15-testlet8.png",
+  "options": [
+    "\"categories\": []",
+    "\"categories\": [\"Email\", \"Persons\", \"Organizations\"]",
+    "\"categories\": [\"Locations\", \"Persons\", \"Organizations\"]",
+    "{\"name\": \"entities\"}",
+    "{\"name\": \"categories\"}",
+    "{\"name\": \"namedEntities\"}"
+  ],
+  "correct": [
+    "\"categories\": [\"Email\", \"Persons\", \"Organizations\"]",
+    "{\"name\": \"entities\"}"
+  ]
+},
+{
+  "questionNumber": "Question 3 - Topic 15 - Testlet 8",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question3-topic15-testlet8.png",
+  "options": [
+    "A. an indexer for Azure Blob storage attached to a skillset that contains the language detection skill and the text translation skill",
+    "B. an indexer for Azure Blob storage attached to a skillset that contains the language detection skill",
+    "C. an indexer for Azure Cosmos DB attached to a skillset that contains the document extraction skill and the text translation skill",
+    "D. an indexer for Azure Cosmos DB attached to a skillset that contains the language detection skill and the text translation skill"
+  ],
+  "correct": "D. an indexer for Azure Cosmos DB attached to a skillset that contains the language detection skill and the text translation skill"
+},
+{
+  "questionNumber": "Question 4 - Topic 15 - Testlet 8",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question4-topic15-testlet8.png",
+  "options": [
+    "A. synonym map",
+    "B. a suggester",
+    "C. a custom analyzer",
+    "D. a built-in key phrase extraction skill"
+  ],
+  "correct":  "A. synonym map"
+},
+{
+  "questionNumber": "Question 1 - Topic 16 - Testlet 9",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic16-testlet9.png",
+  "options": [
+    "if(language == 'en', 'en', name)",
+    "name",
+    "name.en",
+    "name[language]",
+    "\"$when\": \"$(stockLevel != 'OK')\"",
+    "\"$when\": \"${stockLevel == 'OK'}\"",
+    "\"$when\": \"$(stockLevel.OK)\"",
+    "image.altText.en",
+    "image.altText.language",
+    "image.altText.[\"language\"]",
+    "image.altText.[language]"
+  ],
+  "correct": [
+    "name[language]",
+    "\"$when\": \"$(stockLevel != 'OK')\"",
+    "image.altText.[language]"
+  ]
+},
+{
+  "questionNumber": "Question 2 - Topic 16 - Testlet 9",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question2-topic16-testlet9.png",
+  "options": [
+    "Cognitive Service User",
+    "Contributor",
+    "Owner",
+    "QnA Maker Editor",
+    "QnA Maker Read",
+    "--------------------------------",
+    " Cognitive Service User",
+    " Contributor",
+    " Owner",
+    " QnA Maker Editor",
+    " QnA Maker Read"
+  ],
+  "correct": [
+    "QnA Maker Editor",
+    " Cognitive Service User"
+  ]
+},
+{
+  "questionNumber": "Question 3 - Topic 16 - Testlet 9",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question3-topic16-testlet9.png",
+  "options": [
+    "if(language == 'en', 'en', name)",
+    "name",
+    "name.en",
+    "name[language]",
+    "\"$when\": \"$(stockLevel != 'OK')\"",
+    "\"$when\": \"${stockLevel == 'OK'}\"",
+    "\"$when\": \"$(stockLevel.OK)\"",
+    "image.altText.en",
+    "image.altText.language",
+    "image.altText.[\"language\"]",
+    "image.altText.[language]"
+  ],
+  "correct": [
+    "name[language]",
+    "\"$when\": \"$(stockLevel != 'OK')\"",
+    "image.altText.[language]"
+  ]
+},
+{
+  "questionNumber": "Question 1 - Topic 17 - Testlet 10",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic17-testlet10.png",
+  "options": [
+    "A. QnAMakerOptions.StrictFilters",
+    "B. QnADialogResponseOptions.CardNoMatchText",
+    "C. QnAMakerOptions.RankerType",
+    "D. QnAMakerOptions.ScoreThreshold"
+  ],
+  "correct": "D. QnAMakerOptions.ScoreThreshold"
+},
+{
+  "questionNumber": "Question 2 - Topic 17 - Testlet 10",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question2-topic17-testlet10.png",
+  "options": [
+    "A. Microsoft Translator",
+    "B. Language Understanding",
+    "C. Orchestrator",
+    "D. chatdown"
+  ],
+  "correct": "C. Orchestrator"
 }
-
-
 ]
