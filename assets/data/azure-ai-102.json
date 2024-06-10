@@ -577,7 +577,7 @@
     "G. 100",
     "H. 600"
   ],
-  "correct": ["A. capacity", "H. 600"]
+  "correct": ["A. capacity",  "G. 100"]
 },
 {
   "questionNumber": "Question 59",
@@ -843,7 +843,7 @@
     "Retail",
     "Retail (compact)"
   ],
-  "correct": [ "Classification.", "IMulticlass (Single tag per Image)", "General"]
+  "correct": [ "Classification.", "IMulticlass (Single tag per Image)", "General (compact)"]
 },
 {
   "questionNumber": "Question 10 - Topic 2",
@@ -1176,7 +1176,7 @@
     "C. Upload File1.avi to Microsoft OneDrive.",
     "D. Upload File1.avi to the www.youtube.com webpage."
   ],
-  "correct": "B. Upload File1.avi to the Azure Video Indexer website."
+  "correct": "C. Upload File1.avi to Microsoft OneDrive."
 },
 {
   "questionNumber": "Question 34 - Topic 2",
@@ -1687,7 +1687,7 @@
       },
       {
         "text": "The ur1 attribute returned for each linked entity will be a Bing search link.",
-        "correct": "yes"
+        "correct": "no"
       },
       {
         "text": "The matches attribute returned for each linked entity will provide the location in a document where the entity is referenced.",
@@ -1712,6 +1712,7 @@
   {
     "questionNumber": "Question 40 - Topic 3",
     "question": "You develop an app in C# named App1 that performs speech-to-speech translation.\nYou need to configure App1 to translate English to German.\n\nHow should you complete the SpeechTranslationConfig object? To answer, drag the appropriate values to the correct targets. Each value may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\nNOTE: Each correct selection is worth one point.",
+    "images":"assets/images/question40-topic3.png",
     "options": [
         "addTargetLanguage",
         "speechSynthesisLanguage",
@@ -1889,7 +1890,7 @@
       "A. Yes",
       "B. No"
     ],
-    "correct": "A. Yes"
+    "correct": "B. No"
   },
   {
     "questionNumber": "Question 52 - Topic 3",
@@ -2192,6 +2193,26 @@
   "correct": "B. azure-ai-language-conversations"
 },
 {
+  "questionNumber": "Question 73 - Topic 3",
+  "question": "You are building an app that will automatically translate speech from English to French, German, and Spanish by using Azure AI service.\nYou need to define the output languages and configure the Azure AI Speech service.\nHow should you complete the code? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question73-topic3.png",
+  "options": [
+    "['en-GE']",
+    "{'en','fr','de','es'}",
+    "['fr','de','es']",
+    "{\"French\",\"Spanish\",\"German\"}",
+    "IntentRecognizer",
+    "SpeakerRecognizer",
+    "SpeechSynthesizer",
+    "TranslationRecoqnizer"
+
+  ],
+  "correct": [
+    "['fr','de','es']",
+    "TranslationRecoqnizer"
+  ]
+},
+{
   "questionNumber": "Question 74 - Topic 3",
   "question": "HOTSPOT\nYou plan to implement an Azure AI Search resource that will use custom skill based on sentiment analysis.\nYou need to create a custom model and configure Azure AI Search use the model.\nWhich five actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and\narrange them in the correct order.",
   "images":"assets/images/question74-topic3.png",
@@ -2206,8 +2227,8 @@
   "correct": [
     "Create an Azure Machine Learning workspace.",
     "Create and train the model in the Azure Machine Learning studio",
-    "Provision an Azure AI Services resource and obtain the endpoint.",
     "Create an endpoint for the model.",
+    "Provision an Azure AI Services resource and obtain the endpoint.",
     "Connect the custom skill the endpoint."
   ]
 },
@@ -2245,7 +2266,7 @@
   ],
   "correct": [
     "Azure Blob storage",
-    "Custom Vision API",
+    "Computer Vision API",
     "Translator API",
     "Azure Files"
   ]
@@ -2545,5 +2566,308 @@
     "D. chatdown"
   ],
   "correct": "C. Orchestrator"
+},
+{
+  "questionNumber": "Question 1 - Topic 4",
+  "images":"assets/images/question1-topic4.png",
+  "statements":[
+    {
+      "text": "The call will output key phrases from the Input string to the console.",
+      "correct": "yes"
+    },
+    {
+      "text": "The output will contain the following words: the, cat, sat, on, and mat.",
+      "correct": "no"
+    },
+    {
+      "text": "The output will contain the confidence level for key phrases.",
+      "correct": "no"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 2 - Topic 4",
+  "question": "You deploy a web app that is used as a management portal for indexing in Azure Cognitive Search. The app is configured to use the primary admin key.\nDuring a security review, you discover unauthorized changes to the search index. You suspect that the primary access key is compromised.\nYou need to prevent unauthorized access to the index management endpoint. The solution must minimize downtime.\nWhat should you do next?",
+  "options": [
+    "A. Regenerate the primary admin key, change the app to use the secondary admin key, and then regenerate the secondary admin key.",
+    "B. Change the app to use a query key, and then regenerate the primary admin key and the secondary admin key.",
+    "C. Regenerate the secondary admin key, change the app to use the secondary admin key, and then regenerate the primary key.",
+    "D. Add a new query key, change the app to use the new query key, and then delete all the unused query keys."
+  ],
+  "correct": "C. Regenerate the secondary admin key, change the app to use the secondary admin key, and then regenerate the primary key."
+},
+{
+  "questionNumber": "Question 3 - Topic 4",
+  "question": "You have an existing Azure Cognitive Search service.\nYou have an Azure Blob storage account that contains millions of scanned documents stored as images and PDFs.\nYou need to make the scanned documents available to search as quickly as possible.\nWhat should you do?",
+  "options": [
+    "A. Split the data into multiple blob containers. Create a Cognitive Search service for each container. Within each indexer definition, schedule the same runtime execution pattern.",
+    "B. Split the data into multiple blob containers. Create an indexer for each container. Increase the search units. Within each indexer definition, schedule a sequential execution pattern.",
+    "C. Create a Cognitive Search service for each type of document.",
+    "D. Split the data into multiple virtual folders. Create an indexer for each folder. Increase the search units. Within each indexer definition, schedule the same runtime execution pattern."
+  ],
+  "correct": "D. Split the data into multiple virtual folders. Create an indexer for each folder. Increase the search units. Within each indexer definition, schedule the same runtime execution pattern."
+},
+{
+  "questionNumber": "Question 4 - Topic 4",
+  "question": "You need to implement a table projection to generate a physical expression of an Azure Cognitive Search index.\nWhich three properties should you specify in the skillset definition JSON configuration table node? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. tableName",
+    "B. generatedKeyName",
+    "C. dataSource",
+    "D. dataSourceConnection",
+    "E. source"
+  ],
+  "correct": [
+    "A. tableName",
+    "B. generatedKeyName",
+    "E. source"
+  ]
+},
+{
+  "questionNumber": "Question 5 - Topic 4",
+  "question": "You are creating an enrichment pipeline that will use Azure Cognitive Search. The knowledge store contains unstructured JSON data and scanned PDF documents that contain text.\nWhich projection type should you use for each data type? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question5-topic4.png",
+  "options": [
+    "File projection",
+    "Object projection",
+    "Table projection",
+    "--------------------------------",
+    " File projection",
+    " Object projection",
+    " Table projection"
+  ],
+  "correct": [
+     "Object projection",
+     " File projection"
+    ]
+},
+{
+  "questionNumber": "Question 1 - Topic 4",
+  "images":"assets/images/question6-topic4.png",
+  "statements":[
+    {
+      "text": "CompanyDescripEion is avallable for Indexing.",
+      "correct": "yes"
+    },
+    {
+      "text": "The definion calls a web API as part of the enrichment process.",
+      "correct": "yes"
+    },
+    {
+      "text": "The enrichment step is called only for the first organization under '/document/oranizations'.",
+      "correct": "no"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 7 - Topic 4",
+  "question": "You have the following data sources:\n✑ Finance: On-premises Microsoft SQL Server database\n✑ Sales: Azure Cosmos DB using the Core (SQL) API\n✑ Logs: Azure Table storage\n✑ HR: Azure SQL database\nYou need to ensure that you can search all the data by using the Azure Cognitive Search REST API.\nWhat should you do?",
+  "options": [
+    "A. Configure multiple read replicas for the data in Sales.",
+    "B. Mirror Finance to an Azure SQL database.",
+    "C. Ingest the data in Logs into Azure Data Explorer.",
+    "D. Ingest the data in Logs into Azure Sentinel."
+  ],
+  "correct": "B. Mirror Finance to an Azure SQL database."
+},
+{
+  "questionNumber": "Question 8 - Topic 4",
+  "question": "You are developing a solution to generate a word cloud based on the reviews of a company's products.\nWhich Text Analytics REST API endpoint should you use?",
+  "options": [
+    "A. keyPhrases",
+    "B. sentiment",
+    "C. languages",
+    "D. entities/recognition/general"
+  ],
+  "correct": "A. keyPhrases"
+},
+{
+  "questionNumber": "Question 9 - Topic 4",
+  "question": "You have a web app that uses Azure Cognitive Search.\nWhen reviewing billing for the app, you discover much higher than expected charges. You suspect that the query key is compromised.\nYou need to prevent unauthorized access to the search endpoint and ensure that users only have read only access to the documents collection.\nThe solution must minimize app downtime.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and\narrange them in the correct order.",
+  "images":"assets/images/question9-topic4.png",
+  "options": [
+    "Add a new query key.",
+    "Regenerate the secondary admin key.",
+    "Change the app to use the new key.",
+    "Change the app to use the secondary admin key.",
+    "Regenerate the primary admin key.",
+    "Delete the compromised key."
+  ],
+  "correct": [
+    "Regenerate the secondary admin key.",
+    "Change the app to use the secondary admin key.",
+    "Regenerate the primary admin key."
+  ]
+},
+{
+  "questionNumber": "Question 10 - Topic 4",
+  "question": "You are developing an application that will use Azure Cognitive Search for internal documents.\nYou need to implement document-level filtering for Azure Cognitive Search.\nWhich three actions should you include in the solution? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. Send Azure AD access tokens with the search request.",
+    "B. Retrieve all the groups.",
+    "C. Retrieve the group memberships of the user.",
+    "D. Add allowed groups to each index entry.",
+    "E. Create one index per group.",
+    "F. Supply the groups as a filter for the search requests."
+  ],
+  "correct": [
+    "C. Retrieve the group memberships of the user.",
+    "D. Add allowed groups to each index entry.",
+    "F. Supply the groups as a filter for the search requests."
+  ]
+},
+{
+  "questionNumber": "Question 11 - Topic 4",
+  "question": "You have an Azure Cognitive Search solution and an enrichment pipeline that performs Sentiment Analysis on social media posts.\nYou need to define a knowledge store that will include the social media posts and the Sentiment Analysis results.\nWhich two fields should you include in the definition? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. storageContainer",
+    "B. storageConnectionString",
+    "C. files",
+    "D. tables",
+    "E. objects"
+  ],
+  "correct": [
+    "B. storageConnectionString",
+    "E. objects"
+  ]
+},
+{
+  "questionNumber": "Question 13 - Topic 4",
+  "question":"HOTSPOT\nYou create a knowledge store for Azure Cognitive Search by using the following JSON.",
+  "images":"assets/images/question13-topic4.png",
+  "options":[
+    "no projection groups",
+    "no projection group",
+    "two projection groups",
+    "four projection groups",
+    "--------------------------------",
+    "not be projected",
+    "be projected to Azure Blob storage",
+    "be projected to Azure File storage",
+    "be saved to an Azure Table storage"
+  ],
+  "correct":[
+    "two projection groups",
+    "be projected to Azure Blob storage"
+  ]
+},
+{
+  "questionNumber": "Question 14 - Topic 4",
+  "question": "You plan create an index for an Azure Cognitive Search service by using the Azure portal. The Cognitive Search service will connect to an Azure SQL database.\nThe Azure SQL database contains a table named UserMessages. Each row in UserMessages has a field named MessageCopy that contains the text of social media messages sent by a user.\nUsers will perform full text searches against the MessageCopy field, and the values of the field will be shown to the users.\nYou need to configure the properties of the index for the MessageCopy field to support the solution.\nWhich attributes should you enable for the field?",
+  "options": [
+  "A. Sortable and Retrievable",
+  "B. Filterable and Retrievable",
+  "C. Searchable and Facetable",
+  "D. Searchable and Retrievable"
+  ],
+  "correct": "D. Searchable and Retrievable"
+  },
+  {
+    "questionNumber": "Question 15 - Topic 4",
+    "question": "You have the following data sources:\n• Finance: On-premises Microsoft SQL Server database\n• Sales: Azure Cosmos DB using the Core (SQL) API\n• Logs: Azure Table storage\n• HR: Azure SQL database\nYou need to ensure that you can search all the data by using the Azure Cognitive Search REST API.\nWhat should you do?",
+    "options": [
+    "A. Export the data in Finance to Azure Data Lake Storage.",
+    "B. Configure multiple read replicas for the data in Sales.",
+    "C. Ingest the data in Logs into Azure Data Explorer.",
+    "D. Migrate the data in HR to Azure Blob storage."
+  ],
+    "correct": "A. Export the data in Finance to Azure Data Lake Storage."
+},
+{
+  "questionNumber": "Question 16 - Topic 4",
+  "images":"assets/images/question16-topic4.png",
+  "options":[
+    "ComputerVision",
+    "CustomVision.Prediction",
+    "CustomVision.Training",
+    "FormRecognizer",
+    "--------------------------------",
+    "'eastus', 'S1')",
+    "'useast', 'S1')",
+    "'S0', 'eastus')",
+    "'S0', 'useast')"
+  ],
+  "correct":[
+    "FormRecognizer",
+     "'S0', 'eastus')"
+  ]
+},
+{
+  "questionNumber": "Question 17 - Topic 4",
+  "question":"HOTSPOT\nYou have an app named App1 that uses Azure AI Document Intelligence to analyze medical records and provide pharmaceutical dosage recommendations for patients.\nYou send a request to App1 and receive the following response.",
+  "images":"assets/images/question17-topic4.png",
+  "statements":[
+    {
+      "text": "The chosen model is suitable for the intended use case",
+      "correct": "no"
+    },
+    {
+      "text": "The text content was recognized with greater than 70 percent confidence.",
+      "correct": "yes"
+    },
+    {
+      "text": "The form elements were recognized with greater than 70 percent confidence.",
+      "correct": "no"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 18 - Topic 4",
+  "question": "HOTSPOT\nYou have an Azure subscription that contains an Azure AI Document Intelligence resource named DI1.\nYou build an app named App1 that analyzes PDF files for handwritten content by using DI1.\nYou need to ensure that App1 will recognize the handwritten content.\nHow should you complete the code? To answer, select the appropriate options in the answer area.",
+  "images":"assets/images/question18-topic4.png",
+  "options": [
+    "prebuilt-document",
+    "prebuilt-contract",
+    "prebuilt-read",
+    "0.1",
+    "0.75",
+    "1.0"
+  ],
+  "correct": [
+    "prebuilt-read",
+    "0.75"
+  ]
+},
+{
+  "questionNumber": "Question 19 - Topic 4",
+  "question": "You have an app named App1 that uses a custom Azure AI Document Intelligence model to recognize contract documents.\nYou need to ensure that the model supports an additional contract format. The solution must minimize development effort.\nWhat should you do?",
+  "options": [
+    "A. Lower the confidence score threshold of App1.",
+    "B. Create a new training set and add the additional contract format to the new training set. Create and train a new custom model.",
+    "C. Add the additional contract format to the existing training set. Retrain the model.",
+    "D. Lower the accuracy threshold of App1."
+  ],
+  "correct": "C. Add the additional contract format to the existing training set. Retrain the model."
+},
+{
+  "questionNumber": "Question 20 - Topic 4",
+  "question": "HOTSPOT\nYou have an Azure subscription.\nYou need to deploy an Azure AI Document Intelligence resource.\nHow should you complete the Azure Resource Manager (ARM) template? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point",
+  "images":"assets/images/question20-topic4.png",
+  "options": [
+    "Microsoft.CognitiveSearch",
+    "Microsoft.CognitiveServices",
+    "Microsoft.MachineLearning",
+    "Microsoft.MachineLearningServices",
+    "AiBuilder",
+    "CognitiveSearch",
+    "FormRecognizer",
+    "OpenAl"
+  ],
+  "correct": [
+    "Microsoft.CognitiveServices",
+    "FormRecognizer"
+  ]
+},
+{
+  "questionNumber": "Question 21 - Topic 4",
+  "question": "You are building an app named App1 that will use Azure AI Document Intelligence to extract the following data from scanned documents:\n• Shipping address\n• Billing address\n• Customer ID\n• Amount due\n• Due date\n• Total tax\n• Subtotal\nYou need to identify which model to use for App1. The solution must minimize development effort.\nWhich model should you use?",
+  "options": [
+    "custom extraction model",
+    "contract",
+    "invoice",
+    "general document"
+  ],
+  "correct": "invoice"
 }
+
 ]
