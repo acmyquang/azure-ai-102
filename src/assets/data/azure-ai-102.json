@@ -2642,7 +2642,7 @@
     ]
 },
 {
-  "questionNumber": "Question 1 - Topic 4",
+  "questionNumber": "Question 6 - Topic 4",
   "images":"assets/images/question6-topic4.png",
   "statements":[
     {
@@ -2868,6 +2868,658 @@
     "general document"
   ],
   "correct": "invoice"
+},
+{
+  "questionNumber": "Question 1 - Topic 5",
+  "question": "You build a bot by using the Microsoft Bot Framework SDK and the Azure Bot Service.\nYou plan to deploy the bot to Azure.\nYou register the bot by using the Bot Channels Registration service.\nWhich two values are required to complete the deployment? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. botId",
+    "B. tenantId",
+    "C. appId",
+    "D. objectId",
+    "E. appSecret"
+  ],
+  "correct": [
+    "C. appId",
+    "E. appSecret"
+  ]
+},
+{
+  "questionNumber": "Question 2 - Topic 5",
+  "images":"assets/images/question2-topic5.png", 
+  "statements": [
+    {
+      "text": "user.name is an entity",
+      "correct": "no"
+    },
+    {
+      "text": "The dialog asks for a user name and a user age and assigns appropriate values to the aser.name and aser.age properties.",
+      "correct": "yes"
+    },
+    {
+      "text": "The chatbot attempts to take the first non-null entity value for userName or personName and assigns the value to user.name",
+      "correct": "yes"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 3 - Topic 5",
+  "question": "You are building a multilingual chatbot.\nYou need to send a different answer for positive and negative messages.\nWhich two Language service APIs should you use? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. Linked entities from a well-known knowledge base",
+    "B. Sentiment Analysis",
+    "C. Key Phrases",
+    "D. Detect Language",
+    "E. Named Entity Recognition"
+  ],
+  "correct": [
+    "B. Sentiment Analysis",
+    "D. Detect Language"
+  ]
+},
+{
+  "questionNumber": "Question 4 - Topic 5",
+  "question": "You plan to build a chatbot to support task tracking.\nYou create a Language Understanding service named lu1.\nYou need to build a Language Understanding model to integrate into the chatbot. The solution must minimize development time to build the model.\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+  "images":"assets/images/question4-topic5.png",
+  "options": [
+    "Train the application.",
+    "Publish the application.",
+    "Add a new application.",
+    "Add example utterances.",
+    "Add the prebuilt domain ToDo."
+  ],
+  "correct": [
+    "Add a new application.",
+    "Add the prebuilt domain ToDo.",
+    "Train the application.",
+    "Publish the application."
+  ]
+},
+{
+  "questionNumber": "Question 5 - Topic 5",
+  "question": "You are building a bot on a local computer by using the Microsoft Bot Framework. The bot will use an existing Language Understanding model.\nYou need to translate the Language Understanding model locally by using the Bot Framework CLI.\nWhat should you do first?",
+  "options": [
+    "A. From the Language Understanding portal, clone the model.",
+    "B. Export the model as an .lu file.",
+    "C. Create a new Speech service.",
+    "D. Create a new Language Understanding service."
+  ],
+  "correct": "B. Export the model as an .lu file."
+},
+{
+  "questionNumber": "Question 6 - Topic 5",
+  "question": "You are using a Language Understanding service to handle natural language input from the users of a web-based customer agent.\nThe users report that the agent frequently responds with the following generic response: \"Sorry, I don't understand that.\"\nYou need to improve the ability of the agent to respond to requests.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+  "images":"assets/images/question6-topic5.png",
+  "options": [
+    "Add prebuilt domain models as required.",
+    "Validate the utterances logged for review and modify the model.",
+    "Migrate authoring to an Azure resource authoring key.",
+    "Enable active learning.",
+    "Enable log collection by using Log Analytics.",
+    "Train and republish the Language Understanding model."
+  ],
+  "correct": [
+    "Enable active learning.",
+    "Validate the utterances logged for review and modify the model.",
+    "Train and republish the Language Understanding model."
+  ]
+},
+{
+  "questionNumber": "Question 7 - Topic 5",
+  "question": "You build a conversational bot named bot1.\nYou need to configure the bot to use a QnA Maker application.\nFrom the Azure Portal, where can you find the information required by bot1 to connect to the QnA Maker application?",
+  "options": [
+    "A. Access control (IAM)",
+    "B. Properties",
+    "C. Keys and Endpoint",
+    "D. Identity"
+  ],
+  "correct": "C. Keys and Endpoint"
+},
+{
+  "questionNumber": "Question 8 - Topic 5",
+  "images":"assets/images/question8-topic5.png", 
+  "statements": [
+    {
+      "text": "OnMembersAddedAsync will be triggered when a user joins the conversatlon.",
+      "correct": "yes"
+    },
+    {
+      "text": "When a new user joins the conversation, the existing users in the conversation will see the chatbot greeting.",
+      "correct": "no"
+    },
+    {
+      "text": "OnMemberzsAddedAsvnec Will be initialized when a user sends a message.",
+      "correct": "no"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 9 - Topic 5",
+  "question": "HOTSPOT -\nYou are reviewing the design of a chatbot. The chatbot includes a language generation file that contains the following fragment.\n# Greet(user)\n- ${Greeting()}, ${user.name}\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+  "statements": [
+    {
+      "text": "${user.name} retrieves the user name by using a prompt.",
+      "correct": "no"
+    },
+    {
+      "text": "Greet () Is the name of the language generation template.",
+      "correct": "yes"
+    },
+    {
+      "text": "${Greeting () } Is a reference to a template in the language generation file.",
+      "correct": "yes"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 10 - Topic 5",
+  "question": "HOTSPOT -\nYou are reviewing the design of a chatbot. The chatbot includes a language generation file that contains the following fragment.\n# Greet(user)\n- ${Greeting()}, ${user.name}\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+  "statements": [
+    {
+      "text": "The code will create and maintain the UserProfi1e object in the underlying storage layer.",
+      "correct": "yes"
+    },
+    {
+      "text": "The code will create and maintain the ConversationData object in the underlying storage layer.",
+      "correct": "yes"
+    },
+    {
+      "text": "The UserEro£i1e and conversationData objects will persist when the Bot Framework runtime terminates.",
+      "correct": "no"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 11 - Topic 5",
+  "images":"assets/images/question11-topic5.png",
+  "options": [
+    "an Adaptive Card",
+    "a Hero Card",
+    "a Thumbnail Card",
+    "--------------------------------",
+    "an action set",
+    "an image",
+    "an image group",
+    "media"
+  ],
+  "correct": [
+    "an Adaptive Card",
+    "an image"
+  ]
+},
+{
+  "questionNumber": "Question 12 - Topic 5",
+  "images":"assets/images/question12-topic5.png",
+  "options": [
+    "a domain",
+    "a entity",
+    "a intent",
+    "an utterance",
+    "--------------------------------",
+    " a domain",
+    " a entity",
+    " a intent",
+    " an utterance"
+  ],
+  "correct": [
+    "a intent",
+    " an utterance"
+  ]
+},
+{
+  "questionNumber": "Question 13 - Topic 5",
+  "question": "HOTSPOT -\nYou are designing a conversation flow to be used in a chatbot.\nYou need to test the conversation flow by using the Microsoft Bot Framework Emulator.\nHow should you complete the .chat file? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.\nadaptivecard\ncarousel\nthumbnail",
+  "images":"assets/images/question13-topic5.png",
+  "options": [
+    "Attachment",
+    "ConversatonUpdate",
+    "Typing",
+    "--------------------------------",
+    "adaptivecard",
+    "carousel",
+    "thumbnail",
+    "--------------------------------",
+    " adaptivecard",
+    " carousel",
+    "list"
+  ],
+  "correct": [ "Typing", "carousel", " adaptivecard"]
+},
+{
+  "questionNumber": "Question 14 - Topic 5",
+  "images":"assets/images/question14-topic5.png",
+  "options": [
+    "A. dialog",
+    "B. user",
+    "C. turn",
+    "D. conversation"
+  ],
+  "correct":  "A. dialog"
+},
+{
+  "questionNumber": "Question 15 - Topic 5",
+  "question": "DRAG DROP -\nYou have a chatbot that uses a QnA Maker application.\nYou enable active learning for the knowledge base used by the QnA Maker application.\nYou need to integrate user input into the model.\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.\nSelect and Place:",
+  "images":"assets/images/question15-topic5.png",
+  "options": [
+    "Add a task to the Azure resource.",
+    "Approve and reject suggestions.",
+    "Publish the knowledge base.",
+    "Modify the automation task logic app to run an Azure Resource Manager template that creates the Azure Cognitive Service resource.",
+    "For the knowledge base, select Show active learning suggestions.",
+    "Save and train the knowledge base.",
+    "Select the properties of the Azure Cognitive Services resource."
+  ],
+  "correct": [
+    "For the knowledge base, select Show active learning suggestions.",
+    "Approve and reject suggestions.",
+    "Save and train the knowledge base.",
+    "Publish the knowledge base."
+  ]
+},
+{
+  "questionNumber": "Question 16 - Topic 5",
+  "question": "You need to enable speech capabilities for a chatbot.\nWhich three actions should you perform? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. Enable WebSockets for the chatbot app.",
+    "B. Create a Speech service.",
+    "C. Register a Direct Line Speech channel.",
+    "D. Register a Cortana channel.",
+    "E. Enable CORS for the chatbot app.",
+    "F. Create a Language Understanding service."
+  ],
+  "correct": [
+    "A. Enable WebSockets for the chatbot app.",
+    "B. Create a Speech service.",
+    "C. Register a Direct Line Speech channel."
+  ]
+},
+{
+  "questionNumber": "Question 17 - Topic 5",
+  "question": "You use the Microsoft Bot Framework Composer to build a chatbot that enables users to purchase items.\nYou need to ensure that the users can cancel in-progress transactions. The solution must minimize development effort.\nWhat should you add to the bot?",
+  "options": [
+    "A. a language generator",
+    "B. a custom event",
+    "C. a dialog trigger",
+    "D. a conversation activity"
+  ],
+  "correct": "C. a dialog trigger"
+},
+{
+  "questionNumber": "Question 22 - Topic 5",
+  "question": "You are designing a conversational interface for an app that will be used to make vacation requests. The interface must gather the following data:\n• The start date of a vacation\n• The end date of a vacation\n• The amount of required paid time off\nThe solution must minimize dialog complexity.\nWhich type of dialog should you use?",
+  "options": [
+    "A. adaptive",
+    "B. skill",
+    "C. waterfall",
+    "D. component"
+  ],
+  "correct": "C. waterfall"
+},
+{
+  "questionNumber": "Question 23 - Topic 5",
+  "question": "You build a bot by using the Microsoft Bot Framework SDK.\nYou need to test the bot interactively on a local machine.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.\nNOTE: More than one order of answer choices is correct. You will receive credit for any of the correct orders you select.",
+  "images":"assets/images/question23-topic3.png",
+  "options": [
+    "Open the Bot Framework Composer.",
+    "Connect to the bot endpoint.",
+    "Register the bot with the Azure Bot Service.",
+    "Build and run the bot.",
+    "Open the Bot Framework Emulator."
+  ],
+  "correct": [
+    "Build and run the bot.",
+    "Open the Bot Framework Emulator.",
+    "Connect to the bot endpoint."
+  ]
+},
+{
+  "questionNumber": "Question 24 - Topic 5",
+  "question": "You create a bot by using the Microsoft Bot Framework SDK.\nYou need to configure the bot to respond to events by using custom text responses.\nWhat should you use?",
+  "options": [
+    "A. a dialog",
+    "B. an activity handler",
+    "C. an adaptive card",
+    "D. a skill"
+  ],
+  "correct": "B. an activity handler"
+},
+{
+  "questionNumber": "Question 25 - Topic 5",
+  "question": "You build a bot named app1 by using the Microsoft Bot Framework.\nYou prepare app1 for deployment.\nYou need to deploy app1 to Azure.\nHow should you complete the command? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question25-topic5.png",
+  "options": [
+    "bot",
+    "functionapp",
+    "vm",
+    "webapp",
+    "--------------------------------",
+    "config",
+    "config-local-git",
+    "config-zip"
+  ],
+  "correct": [
+    "webapp",
+    "config-zip"
+  ]
+},
+{
+  "questionNumber": "Question 26 - Topic 5",
+  "question": "You have a chatbot that uses question answering in Azure Cognitive Service for Language.\nUsers report that the responses of the chatbot lack formality when answering spurious questions.\nYou need to ensure that the chatbot provides formal responses to spurious questions.\nSolution: From Language Studio, you change the chitchat source to qna_chitchat_friendly.tsv, and then retrain and republish the model.\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "correct": "No"
+},
+{
+  "questionNumber": "Question 27 - Topic 5",
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have a chatbot that uses question answering in Azure Cognitive Service for Language.\nUsers report that the responses of the chatbot lack formality when answering spurious questions.\nYou need to ensure that the chatbot provides formal responses to spurious questions.\nSolution: From Language Studio, you modify the question and answer pairs for the custom intents, and then retrain and republish the model.\nDoes this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "correct": "No"
+},
+{
+  "questionNumber": "Question 28 - Topic 5",
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have a chatbot that uses question answering in Azure Cognitive Service for Language. Users report that the responses of the chatbot lack formality when answering spurious questions. You need to ensure that the chatbot provides formal responses to spurious questions. Solution: From Language Studio, you change the chitchat source to qna_chitchat_professional.tsv, and then retrain and republish the model. Does this meet the goal?",
+  "options": ["Yes", "No"],
+  "correct": "Yes"
+},
+{
+  "questionNumber": "Question 29 - Topic 5",
+  "question": "You create five bots by using Microsoft Bot Framework Composer. You need to make a single bot available to users that combines the bots. The solution must support dynamic routing to the bots based on user input. Which three actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. Create a composer extension.",
+    "B. Change the Recognizer/Dispatch type.",
+    "C. Create an Orchestrator model.",
+    "D. Enable WebSockets.",
+    "E. Create a custom recognizer JSON file.",
+    "F. Install the Orchestrator package."
+  ],
+  "correct": ["B. Change the Recognizer/Dispatch type.", "C. Create an Orchestrator model.", "F. Install the Orchestrator package."]
+},
+{
+  "questionNumber": "Question 30 - Topic 5",
+  "question": "You are building a chatbot that will use question answering in Azure Cognitive Service for Language. You have a PDF named Doc1.pdf that contains a product catalogue and a price list. You upload Doc1.pdf and train the model. During testing, users report that the chatbot responds correctly to the following question: What is the price of ? The chatbot fails to respond to the following question: How much does cost? You need to ensure that the chatbot responds correctly to both questions. Solution: From Language Studio, you add alternative phrasing to the question and answer pair, and then retrain and republish the model. Does this meet the goal?",
+  "options": [
+    "A. Yes",
+    "B. No"
+  ],
+  "correct": "A. Yes"
+},
+{
+  "questionNumber": "Question 31 - Topic 5",
+  "question": "You are building a chatbot that will use question answering in Azure Cognitive Service for Language. You have a PDF named Doc1.pdf that contains a product catalogue and a price list. You upload Doc1.pdf and train the model. During testing, users report that the chatbot responds correctly to the following question: What is the price of ? The chatbot fails to respond to the following question: How much does cost? You need to ensure that the chatbot responds correctly to both questions. Solution: From Language Studio, you enable chit-chat, and then retrain and republish the model. Does this meet the goal?",
+  "options": [
+    "A. Yes",
+    "B. No"
+  ],
+  "correct": "B. No"
+},
+{
+  "questionNumber": "Question 32 - Topic 5",
+  "question": "You are building a chatbot that will use question answering in Azure Cognitive Service for Language. You have a PDF named Doc1.pdf that contains a product catalogue and a price list. You upload Doc1.pdf and train the model. During testing, users report that the chatbot responds correctly to the following question: What is the price of ? The chatbot fails to respond to the following question: How much does cost? You need to ensure that the chatbot responds correctly to both questions. Solution: From Language Studio, you create an entity for price, and then retrain and republish the model. Does this meet the goal?",
+  "options": [
+    "A. Yes",
+    "B. No"
+  ],
+  "correct":  "B. No"
+},
+{
+  "questionNumber": "Question 34 - Topic 5",
+  "question": "You are building a chatbot by using Microsoft Bot Framework Composer. You need to configure the chatbot to present a list of available options. The solution must ensure that an image is provided for each option. Which two features should you use? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. an entity",
+    "B. an Azure function",
+    "C. an utterance",
+    "D. an adaptive card",
+    "E. a dialog"
+  ],
+  "correct": ["D. an adaptive card", "E. a dialog"]
+},
+{
+  "questionNumber": "Question 35 - Topic 5",
+  "question": "You are building a chatbot. You need to configure the bot to guide users through a product setup process. Which type of dialog should you use?",
+  "options": [
+    "A. component",
+    "B. action",
+    "C. waterfall",
+    "D. adaptive"
+  ],
+  "correct": "C. waterfall"
+},
+{
+  "questionNumber": "Question 36 - Topic 5",
+  "question": "You have a chatbot that was built by using Microsoft Bot Framework and deployed to Azure. You need to configure the bot to support voice interactions. The solution must support multiple client apps. Which type of channel should you use?",
+  "options": [
+    "A. Cortana",
+    "B. Microsoft Teams",
+    "C. Direct Line Speech"
+  ],
+  "correct": "C. Direct Line Speech"
+},
+{
+  "questionNumber": "Question 37 - Topic 5",
+  "question": "You are building a bot by using Microsoft Bot Framework. You need to configure the bot to respond to spoken requests. The solution must minimize development effort. What should you do?",
+  "options": [
+    "A. Deploy the bot to Azure and register the bot with a Direct Line Speech channel.",
+    "B. Integrate the bot with Cortana by using the Bot Framework SDK.",
+    "C. Create an Azure function that will call the Speech service and connect the bot to the function.",
+    "D. Deploy the bot to Azure and register the bot with a Microsoft Teams channel."
+  ],
+  "correct": "A. Deploy the bot to Azure and register the bot with a Direct Line Speech channel."
+},
+{
+  "questionNumber": "Question 38 - Topic 5",
+  "question": "You have a chatbot that uses question answering in Azure Cognitive Service for Language. Users report that the responses of the chatbot lack formality when answering spurious questions. You need to ensure that the chatbot provides formal responses to spurious questions. Solution: From Language Studio, you remove all the chit-chat question and answer pairs, and then retrain and republish the model. Does this meet the goal?",
+  "options": [
+    "A. Yes",
+    "B. No"
+  ],
+  "correct": "B. No"
+},
+{
+  "questionNumber": "Question 39 - Topic 5",
+  "question": "HOTSPOT\nYou are building a chatbot.\nYou need to use the Content Moderator service to identify messages that contain sexually explicit language.\nWhich section in the response from the service will contain the category score, and which category will be assigned to the message? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question39-topic5.png",
+  "options": [
+    "Classification",
+    "pii",
+    "Terms",
+    "1",
+    "2",
+    "3"
+  ],
+  "correct": [
+    "Classification",
+    "1"
+  ]
+},
+{
+  "questionNumber": "Question 40 - Topic 5",
+  "question": "You are building a chatbot for a travel agent. The bot will ask users for a destination and must repeat the question until a valid input is received, or the user closes the conversation.\nWhich type of dialog should you use?",
+  "options": [
+    "A. prompt",
+    "B. input",
+    "C. adaptive",
+    "D. QnA Maker"
+  ],
+  "correct": "A. prompt"
+},
+{
+  "questionNumber": "Question 41 - Topic 5",
+  "question": "You are building a chatbot.\nYou need to configure the chatbot to query a knowledge base.\nWhich dialog class should you use?",
+  "options": [
+    "A. QnAMakerDialog",
+    "B. AdaptiveDialog",
+    "C. SkillDialog",
+    "D. ComponentDialog"
+  ],
+  "correct": "A. QnAMakerDialog"
+},
+{
+  "questionNumber": "Question 42 - Topic 5",
+  "question": "HOTSPOT\nYou have a chatbot.\nYou need to ensure that the bot conversation resets if a user fails to respond for 10 minutes.\nHow should you complete the code? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question42-topic5.png",
+  "options": [
+    "on_send_activities(",
+    "send_activity(",
+    "send_trace_activity(",
+    "update_activity(",
+    "--------------------------------",
+    "clear_state",
+    "Delete_property_value",
+    "Save_changes",
+    "Set_property_value"
+  ],
+  "correct": [
+    "send_activity(",
+    "clear_state"
+  ]
+},
+{
+  "questionNumber": "Question 43 - Topic 5",
+  "question": "You develop a Conversational Language Understanding model by using Language Studio.\nDuring testing, users receive incorrect responses to requests that do NOT relate to the capabilities of the model.\nYou need to ensure that the model identifies spurious requests.\nWhat should you do?",
+  "options": [
+    "A. Enable active learning.",
+    "B. Add entities.",
+    "C. Add examples to the None intent.",
+    "D. Add examples to the custom intents."
+  ],
+  "correct": "C. Add examples to the None intent."
+},
+{
+  "questionNumber": "Question 44 - Topic 5",
+  "question": "You have a Speech resource and a bot that was built by using the Microsoft Bot Framework Composer.\nYou need to add support for speech-based channels to the bot.\nWhich three actions should you perform? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. Configure the language and voice settings for the Speech resource.",
+    "B. Add the endpoint and key of the Speech resource to the bot.",
+    "C. Add language understanding to dialogs.",
+    "D. Add Orchestrator to the bot.",
+    "E. Add Speech to the bot responses.",
+    "F. Remove the setSpeak configuration."
+  ],
+  "correct": [
+    "A. Configure the language and voice settings for the Speech resource.",
+    "B. Add the endpoint and key of the Speech resource to the bot.",
+    "E. Add Speech to the bot responses."
+  ]
+},
+{
+  "questionNumber": "Question 45 - Topic 5",
+  "question": "DRAG DROP\nYou are building a bot.\nYou need to test the bot in the Bot Framework Emulator. The solution must ensure that you can debug the bot interactively.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+  "images":"assets/images/question45-topic5.png",
+  "actions": [
+    "Run the bot app on a local host.",
+    "Use the input prompt object to send a trace activity.",
+    "Deploy the bot to Azure",
+    "In the code for the bot, create a new trace activity.",
+    "In the code for the bot, send a trace activity."
+  ],
+  "correct":[
+    "In the code for the bot, create a new trace activity.",
+    "In the code for the bot, send a trace activity.",
+    "Run the bot app on a local host."
+  ]
+},
+{
+  "questionNumber": "Question 46 - Topic 5",
+  "images":"assets/images/question46-topic5.png",
+  "actions": [
+    "change to a different dialog",
+    "identify New York as a city entity",
+    "identify New York as a state entity",
+    "responrd with the weather in Seattle",
+    "--------------------------------",
+    "Custom events",
+    "Dialog events",
+    "Language Understanding intent recognized",
+    "QnA intent recognized"
+  ],
+  "correct":[
+    "identify New York as a city entity",
+    "Language Understanding intent recognized"
+  ]
+},
+{
+  "questionNumber": "Question 47 - Topic 5",
+  "question": "You are building a flight booking bot by using the Microsoft Bot Framework SDK.\nThe bot will ask users for the departure date. The bot must repeat the question until a valid date is given, or the users cancel the transaction.\nWhich type of dialog should you use?",
+  "options": ["A. prompt", "B. adaptive", "C. waterfall", "D. action"],
+  "correct": "A. prompt"
+},
+{
+  "questionNumber": "Question 48 - Topic 5",
+  "question": "You have a chatbot.\nYou need to test the bot by using the Bot Framework Emulator. The solution must ensure that you are prompted for credentials when you sign in to the bot.\nWhich three settings should you configure? To answer, select the appropriate settings in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question48-topic5.png",
+  "options": [
+    "path to ngrok (Enter)",
+    "Bypass ngrok for local address  (Enable)",
+    "Run ngrok when the Emulator srtarts up  (Enable)",
+    "localhost override (Enter)",
+    "locale (Enter)",
+    "Use your own user ID to communicate with the bot (Enable)",
+    "Use a sign-in verification code for QAuthCard (Enable)",
+    "Use version 1.0 authentication token (Enable)",
+    "User ID  (Enter)",
+    "Automatically download and install updates  (Enable)",
+    "Use pre-release versions  (Enable)",
+    "Help improve the Emulator by allowing us to collect usage data. (Enable)"
+  ],
+  "correct": [
+    "path to ngrok (Enter)",
+    "Run ngrok when the Emulator srtarts up  (Enable)",
+    "Use version 1.0 authentication token (Enable)"
+  ]
+},
+{
+  "questionNumber": "Question 49 - Topic 5",
+  "images":"assets/images/question49-topic5.png",
+  "statements": [
+    {
+      "text": "The code will create and maintain the UserProfi1e object in the underlying storage layer.",
+      "correct": "yes"
+    },
+    {
+      "text": "The code will create and maintain the ConversationData object in the underlying storage layer.",
+      "correct": "yes"
+    },
+    {
+      "text": "The UserProfile and ConversationData objects will persist when the Bot Framework runtime terminates.",
+      "correct": "no"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 50 - Topic 5",
+  "question": "You build a bot.\nYou create an Azure Bot resource.\nYou need to deploy the bot to Azure.\nWhat else should you create?",
+  "options": [
+    "A. only an app registration in Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra, an Azure App Service instance, and an App Service plan",
+    "B. only an app registration in Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra, an Azure Kubernetes Service (AKS) instance, and a container image",
+    "C. only an Azure App Service instance, and an App Service plan",
+    "D. only an Azure Machine Learning workspace and an app registration in Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra"
+  ],
+  "correct": "A. only an app registration in Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra, an Azure App Service instance, and an App Service plan"
+},
+{
+  "questionNumber": "Question 51 - Topic 5",
+  "question": "You are building a chatbot by using the Microsoft Bot Framework SDK. The bot will be used to accept food orders from customers and allow the customers to customize each food item.\nYou need to configure the bot to ask the user for additional input based on the type of item ordered. The solution must minimize development effort.\nWhich two types of dialogs should you use? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "A. adaptive",
+    "B. action",
+    "C. waterfall",
+    "D. prompt",
+    "E. input"
+  ],
+  "correct": ["C. waterfall", "D. prompt"]
+},
+{
+  "questionNumber": "Question 52 - Topic 5",
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You are building a chatbot that will use question answering in Azure Cognitive Service for Language. You have a PDF named Doc1.pdf that contains a product catalogue and a price list. You upload Doc1.pdf and train the model. During testing, users report that the chatbot responds correctly to the following question: What is the price of ? The chatbot fails to respond to the following question: How much does cost? You need to ensure that the chatbot responds correctly to both questions. Solution: From Language Studio, you create an entity for cost, and then retrain and republish the model. Does this meet the goal?",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "correct": "No"
 }
-
 ]
