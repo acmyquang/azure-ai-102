@@ -561,7 +561,7 @@
     "D. Create a private endpoint.",
     "E. Create a Conditional Access policy."
   ],
-  "correct": ["B. Configure a custom subdomain.", "E. Create a Conditional Access policy."]
+  "correct": ["B. Configure a custom subdomain.", "D. Create a private endpoint."]
 },
 {
   "questionNumber": "Question 58",
