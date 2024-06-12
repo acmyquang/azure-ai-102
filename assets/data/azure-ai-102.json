@@ -743,7 +743,7 @@
     "E. detect",
     "F. generateThumbnail"
   ],
-  "correct": ["B. https://contoso1.cognitiveservices.azure.com", "F. generateThumbnail"]
+  "correct": ["C. https://westus.api.cognitive.microsoft.com", "F. generateThumbnail"]
 },
 {
   "questionNumber": "Question 4 - Topic 2",
@@ -3521,5 +3521,212 @@
     "No"
   ],
   "correct": "No"
+},
+{
+  "questionNumber": "Question 1 - Topic 6",
+  "question": "You have a monitoring solution that uses the Azure AI Anomaly Detector service.\nYou provision a server named Server1 that has intermittent internet access.\nYou need to deploy the Azure AI Anomaly Detector to Server1.\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+  "options": [
+    "Query the prediction endpoint on Server1.",
+    "From Server1, run the docker push command.",
+    "Install the Docker Engine on Server1.",
+    "Query the prediction endpoint of the Azure AI Anomaly Detector in Azure.",
+    "From Server1, run the docker run command.",
+    "From Server1, run the docker pull command."
+  ],
+  "correct": [
+    "Install the Docker Engine on Server1.",
+    "From Server1, run the docker pull command.",
+    "From Server1, run the docker run command.",
+    "Query the prediction endpoint on Server1."
+  ]
+},
+{
+  "questionNumber": "Question 1 - Topic 7",
+  "question": "You have an Azure subscription. The subscription contains an Azure OpenAI resource that hosts a GPT-4 model named Model1 and an app named App1. App1 uses Model1.\nYou need to ensure that App1 will NOT return answers that include hate speech.\nWhat should you configure for Model1?",
+  "options": [
+    "A. the Frequency penalty parameter",
+    "B. abuse monitoring",
+    "C. a content filter",
+    "D. the Temperature parameter"
+  ],
+  "correct": "C. a content filter"
+},
+{
+  "questionNumber": "Question 2 - Topic 7",
+  "question": "You have an Azure subscription. The subscription contains an Azure OpenAI resource that hosts a GPT-3.5 Turbo model named Model1.\nYou configure Model1 to use the following system message: “You are an AI assistant that helps people solve mathematical puzzles. Explain your answers as if the request is by a 4-year-old.”\nWhich type of prompt engineering technique is this an example of?",
+  "options": [
+    "A. few-shot learning",
+    "B. affordance",
+    "C. chain of thought",
+    "D. priming"
+  ],
+  "correct": "D. priming"
+},
+{
+  "questionNumber": "Question 3 - Topic 7",
+  "question": "You build a chatbot by using Azure OpenAI Studio.\nYou need to ensure that the responses are more deterministic and less creative.\nWhich two parameters should you configure? To answer, select the appropriate parameters in the answer area.\nNOTE: Each correct answer is worth one point.",
+  "options": [
+    "Max responese",
+    "Temperature",
+    "Top P",
+    "Stop sequence",
+    "Frequency penalty",
+    "Presence penalty"
+  ],
+  "correct": [
+    "Temperature",
+    "Top P"
+  ]
+},
+{
+  "questionNumber": "Question 4 - Topic 7",
+  "question": "You are building a chatbot for a travel agent. The chatbot will use the Azure OpenAI GPT 3.5 model and will be used to make travel reservations.\nYou need to maximize the accuracy of the responses from the chatbot.\nWhat should you do?",
+  "options": [
+    "A. Configure the model to include data from the travel agent's database.",
+    "B. Set the Top P parameter for the model to 0.",
+    "C. Set the Temperature parameter for the model to 0.",
+    "D. Modify the system message used by the model to specify that the answers must be accurate."
+  ],
+  "correct": "A. Configure the model to include data from the travel agent's database."
+},
+{
+  "questionNumber": "Question 5 - Topic 7",
+  "question": "You build a chatbot that uses the Azure OpenAI GPT 3.5 model.\nYou need to improve the quality of the responses from the chatbot. The solution must minimize development effort.\nWhat are two ways to achieve the goal? Each correct answer presents a complete solution.\nNOTE: Each correct answer is worth one point.",
+  "options": [
+    "A. Fine-tune the model.",
+    "B. Provide grounding content.",
+    "C. Add sample request/response pairs.",
+    "D. Retrain the language model by using your own data.",
+    "E. Train a custom large language model (LLM)."
+  ],
+  "correct": [
+    "B. Provide grounding content.",
+    "C. Add sample request/response pairs."
+  ]
+},
+{
+  "questionNumber": "Question 6 - Topic 7",
+  "question": "You have an Azure subscription that contains an Azure OpenAI resource named AI1.\nYou build a chatbot that will use AI1 to provide generative answers to specific questions.\nYou need to ensure that the responses are more creative and less deterministic.\nHow should you complete the code? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question6-topic7.png",
+  "options": [
+    "ChatRole.Assistant",
+    "ChatRole.Function",
+    "ChatRole.System",
+    "ChatRole.User",
+    "--------------------------------",
+    " ChatRole.User",
+    "PresencePenalty",
+    "Temperature",
+    "TokenSelectionBiases"
+  ],
+  "correct": [
+    "ChatRole.Assistant",
+    "Temperature"
+  ]
+},
+{
+  "questionNumber": "Question 7 - Topic 7",
+  "question": "You have an Azure subscription that contains an Azure OpenAI resource named AI1.\nYou plan to build an app named App1 that will write press releases by using AI1.\nYou need to deploy an Azure OpenAI model for App1. The solution must minimize development effort.\nWhich three actions should you perform in sequence in Azure OpenAI Studio? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+  "images":"assets/images/question7-topic7.png",
+  "options": [
+    "Create a deployment that uses the text-embedding-ada-002 model.",
+    "Apply the Marketing Writing Assistant system message template.",
+    "Apply the Default system message template.",
+    "Create a deployment that uses the GPT-35 Turbo model.",
+    "Deploy the solution to a new web app."
+  ],
+  "correct": [
+    "Create a deployment that uses the GPT-35 Turbo model.",
+    "Apply the Marketing Writing Assistant system message template.",
+    "Deploy the solution to a new web app."
+  ]
+},
+{
+  "questionNumber": "Question 8 - Topic 7",
+  "question": "You have an Azure subscription that contains an Azure OpenAI resource named AI1.\nYou build a chatbot that will use AI1 to provide generative answers to specific questions.\nYou need to ensure that the responses are more creative and less deterministic.\nHow should you complete the code? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question8-topic7.png",
+  "options": [
+    "\"assistant\"",
+    "\"function\"",
+    "\"system\"",
+    "\"user\"",
+    "Frequency_penalty",
+    "Presence_penalty",
+    "temperature",
+    "token_selection_biasses"
+  ],
+  "correct": [
+    "\"system\"",
+    "temperature"
+  ]
+},
+{
+  "questionNumber": "Question 9 - Topic 7",
+  "question": "You have an Azure subscription that contains an Azure OpenAI resource.\nYou configure a model that has the following settings:\n• Temperature: 1\n• Top probabilities: 0.5\n• Max response tokens: 100\nYou ask the model a question and receive the following response.\n\nThe subscription will be charged 86 tokens for the execution of the session.\nThe text completion was truncated because the Max response tokens value was exceeded.",
+  "images":"assets/images/question9-topic7.png",
+  "statements": [
+    {
+      "text": "The subscription will be charged 86 tokens for the execution of the session.",
+      "correct": "no"
+    },
+    {
+      "text": "The text completion was truncated because the Max response tokens value was exceeded.",
+      "correct": "no"
+    },
+    {
+      "text": "The prompt_ tokens value will be included in the calculation of the Max response tokens value.",
+      "correct": "no"
+    }
+  ]
+},
+{
+  "questionNumber": "Question 10 - Topic 7",
+  "question": "You have an Azure subscription that contains an Azure OpenAI resource named AI1.\nYou plan to develop a console app that will answer user questions.\nYou need to call AI1 and output the results to the console.\nHow should you complete the code? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question10-topic7.png",
+  "options": [
+    "openai.ChatCompletion.create",
+    "openai.Embedding.create",
+    "openai.Image.create",
+    "(response.choices[0].text)",
+    "(response.id)",
+    "(response.text)"
+  ],
+  "correct": [
+    "openai.ChatCompletion.create",
+    "(response.choices[0].text)"
+  ]
+},
+{
+  "questionNumber": "Question 11 - Topic 7",
+  "question": "You have an Azure subscription that contains an Azure OpenAI resource named AI1.\nYou plan to develop a console app that will answer user questions.\nYou need to call AI1 and output the results to the console.\nHow should you complete the code? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question11-topic7.png",
+  "options": [
+    "GetCompletions",
+    "GetEmbeddings",
+    "GetImageGeneArations",
+    "(response.Value.Choices[0].Text)",
+    "(response.Value.Id)",
+    "(response.Value.PromptFilterResults)"
+  ],
+  "correct": [
+    "GetCompletions",
+    "(response.Value.Choices[0].Text)"
+  ]
+},
+{
+  "questionNumber": "Question 12 - Topic 7",
+  "question": "You have an Azure subscription.\nYou need to create a new resource that will generate fictional stories in response to user prompts. The solution must ensure that the resource uses a customer-managed key to protect data.\nHow should you complete the script? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "options": [
+    "AIServices",
+    "LanguageAuthoring",
+    "OpenAI",
+    "--api-properties",
+    "--assign-identity",
+    "--encryption"
+  ],
+  "correct": [
+    "OpenAI",
+    "--encryption"
+  ]
 }
 ]
