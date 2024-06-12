@@ -664,7 +664,7 @@
     "C. metric alerts in Azure Monitor",
     "D. Univariate Anomaly Detection"
   ],
-  "correct": "D. Univariate Anomaly Detection"
+  "correct": "B. Azure Stream Analytics"
 },
 {
   "questionNumber": "Question 67",
@@ -1392,7 +1392,7 @@
     "statements": [
       {
         "text": "Going to http://localhost:5000/status will query the Azure endpoint to verify whether the API key used to start the container is valid.",
-        "correct": "yes"
+        "correct": "no"
       },
       {
         "text": "The container logging provider will write log data.",
@@ -1686,7 +1686,7 @@
         "correct": "no"
       },
       {
-        "text": "The ur1 attribute returned for each linked entity will be a Bing search link.",
+        "text": "The url attribute returned for each linked entity will be a Bing search link.",
         "correct": "no"
       },
       {
@@ -1813,7 +1813,7 @@
       "From Recognizer",
       "Language"
     ],
-    "correct": ["3. From Recognizer", "Language"]
+    "correct": ["2. Computer Vision", "Language"]
   },
   {
     "questionNumber": "Question 47 - Topic 3",
@@ -2250,322 +2250,6 @@
     "Azure AI Document Intelligence",
     "Azure AI Language"
   ]
-},
-{
-  "questionNumber": "Question 1 - Topic 8 - Testlet 1",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question1-topic8-testlet1.png",
-  "options": [
-    "Azure Blob storage",
-    "Custom Vision API",
-    "Azure Files",
-    "Conversational Language \nUnderstanding API",
-    "Translator API",
-    "Computer Vision API",
-    "Azure Cosmos DB"
-  ],
-  "correct": [
-    "Azure Blob storage",
-    "Computer Vision API",
-    "Translator API",
-    "Azure Files"
-  ]
-},
-{
-  "questionNumber": "Question 1 - Topic 9 - Testlet 2",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question1-topic9-testlet2.png",
-  "options": [
-    "1. Owner",
-    "2. Contributor",
-    "3. Cognitive Services User",
-    "4. Cognitive Services QnA Maker Read",
-    "5. Cognitive Services QnA Maker Editor",
-    "--------------------------------",
-    "Owner",
-    "Contributor",
-    "Cognitive Services User",
-    "Cognitive Services QnA Maker Read",
-    "Cognitive Services QnA Maker Editor",
-    "--------------------------------",
-    " Owner",
-    " Contributor",
-    " Cognitive Services User",
-    " Cognitive Services QnA Maker Read",
-    " Cognitive Services QnA Maker Editor"
-  ],
-  "correct": [
-    "3. Cognitive Services User",
-    "Cognitive Services QnA Maker Editor",
-    " Cognitive Services QnA Maker Read"
-  ]
-},
-{
-  "questionNumber": "Question 1 - Topic 10 - Testlet 3",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question1-topic10-testlet3.png",
-  "options": [
-    "Index the video by using the Azure Video Analyzer for Media (previously Video Indexer) API.",
-    "Upload the video to blob storage",
-    "Analyze the video by using the Computer Vision API.",
-    "Extract the transcript from Microsoft Stream.",
-    "Send the transcript to the Language Understanding API as an utterance.",
-    "Extract the transcipt from the Azure Video Analyzer for Media (previously Video Indexer) API.",
-    "Translate the transcript by using the Translator API",
-    "Upload the video to file storage."
-  ],
-  "correct": [
-    "Upload the video to blob storage",
-    "Index the video by using the Azure Video Analyzer for Media (previously Video Indexer) API.",
-    "Extract the transcipt from the Azure Video Analyzer for Media (previously Video Indexer) API.",
-    "Translate the transcript by using the Translator API"
-  ]
-},
-{
-  "questionNumber": "Question 2 - Topic 10 - Testlet 3",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question2-topic10-testlet3.png",
-  "options": [
-    "Dictionary",
-    "stream",
-    "string",
-    "VisualFeatureTypes.Description",
-    "VisualFeatureTypes.ImageType",
-    "VisualFeatureTypes.Objects",
-    "VisualFeatureTypes.Tag",
-    "var c = results.Brands.DetectedBrands[0]",
-    "var c = results.Description.Captions[0]",
-    "var c = results.Metadata[0]",
-    "var c = results.Objects[0]"
-  ],
-  "correct": [
-    "string",
-    "VisualFeatureTypes.Description",
-    "var c = results.Description.Captions[0]"
-  ]
-},
-{
-  "questionNumber": "Question 1 - Topic 11 - Testlet 4",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question1-topic11-testlet4.png",
-  "options": [
-    "Train a custom model",
-    "Label the sample documents",
-    "Create a new project and load sample documents",
-    "Create a composite model"
-  ],
-  "correct": [
-    "Create a new project and load sample documents",
-    "Label the sample documents",
-    "Train a custom model"
-  ]
-},
-{
-  "questionNumber": "Question 2 - Topic 11 - Testlet 4",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question2-topic11-testlet4.png",
-  "options": [
-    "A. Create a custom language model",
-    "B. Configure audio indexing for videos only",
-    "C. Enable multi-language detection for videos",
-    "D. Build a custom Person model for webinar presenters"
-  ],
-  "correct": "A. Create a custom language model"
-},
-{
-  "questionNumber": "Question 1 - Topic 12 - Testlet 5",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question1-topic12-testlet5.png",
-  "options": [
-    "api.cognitive.microsofttranslator.com",
-    "api-nam.cognitive.microsofttranslator.com",
-    "westuls.tts.speech.microsoft.com",
-    "westuls.tts.speech.microsoft.com",
-    "/detect",
-    "/languages",
-    "/text-to-speech",
-    "/translate"
-  ],
-  "correct": ["api-nam.cognitive.microsofttranslator.com", "/translate"]
-},
-{
-  "questionNumber": "Question 1 - Topic 13 - Testlet 6",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question1-topic13-testlet6.png",
-  "options": [
-    "A. documentResults.docType == 'prebuilt:receipt'",
-    "B. documentResults.fields.*.confidence < 0.7",
-    "C. documentResults.fields.ReceiptType.confidence > 0.7",
-    "D. documentResults.fields.MerchantName.confidence < 0.7"
-  ],
-  "correct": "B. documentResults.fields.*.confidence < 0.7"
-},
-{
-  "questionNumber": "Question 1 - Topic 14 - Testlet 7",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question1-topic14-testlet7.png",
-  "options": [
-    "A. Make API queries to the autocomplete endpoint and include suggesterName in the body.",
-    "B. Add a suggester that has the three product name fields as source fields.",
-    "C. Make API queries to the search endpoint and include the product name fields in the searchFields query parameter.",
-    "D. Add a suggester for each of the three product name fields.",
-    "E. Set the searchAnalyzer property for the three product name variants.",
-    "F. Set the analyzer property for the three product name variants."
-  ],
-  "correct": [
-    "A. Make API queries to the autocomplete endpoint and include suggesterName in the body.",
-    "B. Add a suggester that has the three product name fields as source fields.",
-    "F. Set the analyzer property for the three product name variants."
-  ]
-},
-{
-  "questionNumber": "Question 1 - Topic 15 - Testlet 8",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question1-topic15-testlet8.png",
-  "options": [
-    "A. /vision/v3.1/read/analyzeResults",
-    "B. /formrecognizer/v2.0/custom/models/{modelId}/analyze",
-    "C. /formrecognizer/v2.0/prebuilt/receipt/analyze",
-    "D. /vision/v3.1/describe",
-    "E. /vision/v3.1/read/analyze"
-  ],
-  "correct": [
-    "B. /formrecognizer/v2.0/custom/models/{modelId}/analyze",
-    "C. /formrecognizer/v2.0/prebuilt/receipt/analyze"
-  ]
-},
-{
-  "questionNumber": "Question 2 - Topic 15 - Testlet 8",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question2-topic15-testlet8.png",
-  "options": [
-    "\"categories\": []",
-    "\"categories\": [\"Email\", \"Persons\", \"Organizations\"]",
-    "\"categories\": [\"Locations\", \"Persons\", \"Organizations\"]",
-    "{\"name\": \"entities\"}",
-    "{\"name\": \"categories\"}",
-    "{\"name\": \"namedEntities\"}"
-  ],
-  "correct": [
-    "\"categories\": [\"Email\", \"Persons\", \"Organizations\"]",
-    "{\"name\": \"entities\"}"
-  ]
-},
-{
-  "questionNumber": "Question 3 - Topic 15 - Testlet 8",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question3-topic15-testlet8.png",
-  "options": [
-    "A. an indexer for Azure Blob storage attached to a skillset that contains the language detection skill and the text translation skill",
-    "B. an indexer for Azure Blob storage attached to a skillset that contains the language detection skill",
-    "C. an indexer for Azure Cosmos DB attached to a skillset that contains the document extraction skill and the text translation skill",
-    "D. an indexer for Azure Cosmos DB attached to a skillset that contains the language detection skill and the text translation skill"
-  ],
-  "correct": "D. an indexer for Azure Cosmos DB attached to a skillset that contains the language detection skill and the text translation skill"
-},
-{
-  "questionNumber": "Question 4 - Topic 15 - Testlet 8",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question4-topic15-testlet8.png",
-  "options": [
-    "A. synonym map",
-    "B. a suggester",
-    "C. a custom analyzer",
-    "D. a built-in key phrase extraction skill"
-  ],
-  "correct":  "A. synonym map"
-},
-{
-  "questionNumber": "Question 1 - Topic 16 - Testlet 9",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question1-topic16-testlet9.png",
-  "options": [
-    "if(language == 'en', 'en', name)",
-    "name",
-    "name.en",
-    "name[language]",
-    "\"$when\": \"$(stockLevel != 'OK')\"",
-    "\"$when\": \"${stockLevel == 'OK'}\"",
-    "\"$when\": \"$(stockLevel.OK)\"",
-    "image.altText.en",
-    "image.altText.language",
-    "image.altText.[\"language\"]",
-    "image.altText.[language]"
-  ],
-  "correct": [
-    "name[language]",
-    "\"$when\": \"$(stockLevel != 'OK')\"",
-    "image.altText.[language]"
-  ]
-},
-{
-  "questionNumber": "Question 2 - Topic 16 - Testlet 9",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question2-topic16-testlet9.png",
-  "options": [
-    "Cognitive Service User",
-    "Contributor",
-    "Owner",
-    "QnA Maker Editor",
-    "QnA Maker Read",
-    "--------------------------------",
-    " Cognitive Service User",
-    " Contributor",
-    " Owner",
-    " QnA Maker Editor",
-    " QnA Maker Read"
-  ],
-  "correct": [
-    "QnA Maker Editor",
-    " Cognitive Service User"
-  ]
-},
-{
-  "questionNumber": "Question 3 - Topic 16 - Testlet 9",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question3-topic16-testlet9.png",
-  "options": [
-    "if(language == 'en', 'en', name)",
-    "name",
-    "name.en",
-    "name[language]",
-    "\"$when\": \"$(stockLevel != 'OK')\"",
-    "\"$when\": \"${stockLevel == 'OK'}\"",
-    "\"$when\": \"$(stockLevel.OK)\"",
-    "image.altText.en",
-    "image.altText.language",
-    "image.altText.[\"language\"]",
-    "image.altText.[language]"
-  ],
-  "correct": [
-    "name[language]",
-    "\"$when\": \"$(stockLevel != 'OK')\"",
-    "image.altText.[language]"
-  ]
-},
-{
-  "questionNumber": "Question 1 - Topic 17 - Testlet 10",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question1-topic17-testlet10.png",
-  "options": [
-    "A. QnAMakerOptions.StrictFilters",
-    "B. QnADialogResponseOptions.CardNoMatchText",
-    "C. QnAMakerOptions.RankerType",
-    "D. QnAMakerOptions.ScoreThreshold"
-  ],
-  "correct": "D. QnAMakerOptions.ScoreThreshold"
-},
-{
-  "questionNumber": "Question 2 - Topic 17 - Testlet 10",
-  "question":"Introductory Info \nCASE STUDY",
-  "images":"assets/images/question2-topic17-testlet10.png",
-  "options": [
-    "A. Microsoft Translator",
-    "B. Language Understanding",
-    "C. Orchestrator",
-    "D. chatdown"
-  ],
-  "correct": "C. Orchestrator"
 },
 {
   "questionNumber": "Question 1 - Topic 4",
@@ -3222,13 +2906,13 @@
 },
 {
   "questionNumber": "Question 28 - Topic 5",
-  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You have a chatbot that uses question answering in Azure Cognitive Service for Language. Users report that the responses of the chatbot lack formality when answering spurious questions. You need to ensure that the chatbot provides formal responses to spurious questions. Solution: From Language Studio, you change the chitchat source to qna_chitchat_professional.tsv, and then retrain and republish the model. Does this meet the goal?",
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have a chatbot that uses question answering in Azure Cognitive Service for Language.\nUsers report that the responses of the chatbot lack formality when answering spurious questions.\nYou need to ensure that the chatbot provides formal responses to spurious questions.\nSolution: From Language Studio, you change the chitchat source to qna_chitchat_professional.tsv, and then retrain and republish the model.\nDoes this meet the goal?",
   "options": ["Yes", "No"],
   "correct": "Yes"
 },
 {
   "questionNumber": "Question 29 - Topic 5",
-  "question": "You create five bots by using Microsoft Bot Framework Composer. You need to make a single bot available to users that combines the bots. The solution must support dynamic routing to the bots based on user input. Which three actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+  "question": "You create five bots by using Microsoft Bot Framework Composer.\nYou need to make a single bot available to users that combines the bots. The solution must support dynamic routing to the bots based on user input.\nWhich three actions should you perform? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
   "options": [
     "A. Create a composer extension.",
     "B. Change the Recognizer/Dispatch type.",
@@ -3241,7 +2925,7 @@
 },
 {
   "questionNumber": "Question 30 - Topic 5",
-  "question": "You are building a chatbot that will use question answering in Azure Cognitive Service for Language. You have a PDF named Doc1.pdf that contains a product catalogue and a price list. You upload Doc1.pdf and train the model. During testing, users report that the chatbot responds correctly to the following question: What is the price of ? The chatbot fails to respond to the following question: How much does cost? You need to ensure that the chatbot responds correctly to both questions. Solution: From Language Studio, you add alternative phrasing to the question and answer pair, and then retrain and republish the model. Does this meet the goal?",
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou are building a chatbot that will use question answering in Azure Cognitive Service for Language.\nYou have a PDF named Doc1.pdf that contains a product catalogue and a price list.\nYou upload Doc1.pdf and train the model.\nDuring testing, users report that the chatbot responds correctly to the following question: What is the price of ?\nThe chatbot fails to respond to the following question: How much does cost?\nYou need to ensure that the chatbot responds correctly to both questions.\nSolution: From Language Studio, you add alternative phrasing to the question and answer pair, and then retrain and republish the model.\nDoes this meet the goal?",
   "options": [
     "A. Yes",
     "B. No"
@@ -3250,7 +2934,7 @@
 },
 {
   "questionNumber": "Question 31 - Topic 5",
-  "question": "You are building a chatbot that will use question answering in Azure Cognitive Service for Language. You have a PDF named Doc1.pdf that contains a product catalogue and a price list. You upload Doc1.pdf and train the model. During testing, users report that the chatbot responds correctly to the following question: What is the price of ? The chatbot fails to respond to the following question: How much does cost? You need to ensure that the chatbot responds correctly to both questions. Solution: From Language Studio, you enable chit-chat, and then retrain and republish the model. Does this meet the goal?",
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou are building a chatbot that will use question answering in Azure Cognitive Service for Language.\nYou have a PDF named Doc1.pdf that contains a product catalogue and a price list.\nYou upload Doc1.pdf and train the model.\nDuring testing, users report that the chatbot responds correctly to the following question: What is the price of ?\nThe chatbot fails to respond to the following question: How much does cost?\nYou need to ensure that the chatbot responds correctly to both questions.\nSolution: From Language Studio, you enable chit-chat, and then retrain and republish the model.\nDoes this meet the goal?",
   "options": [
     "A. Yes",
     "B. No"
@@ -3259,7 +2943,7 @@
 },
 {
   "questionNumber": "Question 32 - Topic 5",
-  "question": "You are building a chatbot that will use question answering in Azure Cognitive Service for Language. You have a PDF named Doc1.pdf that contains a product catalogue and a price list. You upload Doc1.pdf and train the model. During testing, users report that the chatbot responds correctly to the following question: What is the price of ? The chatbot fails to respond to the following question: How much does cost? You need to ensure that the chatbot responds correctly to both questions. Solution: From Language Studio, you create an entity for price, and then retrain and republish the model. Does this meet the goal?",
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou are building a chatbot that will use question answering in Azure Cognitive Service for Language.\nYou have a PDF named Doc1.pdf that contains a product catalogue and a price list.\nYou upload Doc1.pdf and train the model.\nDuring testing, users report that the chatbot responds correctly to the following question: What is the price of ?\nThe chatbot fails to respond to the following question: How much does cost?\nYou need to ensure that the chatbot responds correctly to both questions.\nSolution: From Language Studio, you create an entity for price, and then retrain and republish the model.\nDoes this meet the goal?",
   "options": [
     "A. Yes",
     "B. No"
@@ -3268,7 +2952,7 @@
 },
 {
   "questionNumber": "Question 34 - Topic 5",
-  "question": "You are building a chatbot by using Microsoft Bot Framework Composer. You need to configure the chatbot to present a list of available options. The solution must ensure that an image is provided for each option. Which two features should you use? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+  "question": "You are building a chatbot by using Microsoft Bot Framework Composer.\nYou need to configure the chatbot to present a list of available options. The solution must ensure that an image is provided for each option.\nWhich two features should you use? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
   "options": [
     "A. an entity",
     "B. an Azure function",
@@ -3280,7 +2964,7 @@
 },
 {
   "questionNumber": "Question 35 - Topic 5",
-  "question": "You are building a chatbot. You need to configure the bot to guide users through a product setup process. Which type of dialog should you use?",
+  "question": "You are building a chatbot.\nYou need to configure the bot to guide users through a product setup process.\nWhich type of dialog should you use?",
   "options": [
     "A. component",
     "B. action",
@@ -3291,7 +2975,7 @@
 },
 {
   "questionNumber": "Question 36 - Topic 5",
-  "question": "You have a chatbot that was built by using Microsoft Bot Framework and deployed to Azure. You need to configure the bot to support voice interactions. The solution must support multiple client apps. Which type of channel should you use?",
+  "question": "You have a chatbot that was built by using Microsoft Bot Framework and deployed to Azure.\nYou need to configure the bot to support voice interactions. The solution must support multiple client apps.\nWhich type of channel should you use?",
   "options": [
     "A. Cortana",
     "B. Microsoft Teams",
@@ -3301,7 +2985,7 @@
 },
 {
   "questionNumber": "Question 37 - Topic 5",
-  "question": "You are building a bot by using Microsoft Bot Framework. You need to configure the bot to respond to spoken requests. The solution must minimize development effort. What should you do?",
+  "question": "You are building a bot by using Microsoft Bot Framework.\nYou need to configure the bot to respond to spoken requests. The solution must minimize development effort.\nWhat should you do?",
   "options": [
     "A. Deploy the bot to Azure and register the bot with a Direct Line Speech channel.",
     "B. Integrate the bot with Cortana by using the Bot Framework SDK.",
@@ -3312,7 +2996,7 @@
 },
 {
   "questionNumber": "Question 38 - Topic 5",
-  "question": "You have a chatbot that uses question answering in Azure Cognitive Service for Language. Users report that the responses of the chatbot lack formality when answering spurious questions. You need to ensure that the chatbot provides formal responses to spurious questions. Solution: From Language Studio, you remove all the chit-chat question and answer pairs, and then retrain and republish the model. Does this meet the goal?",
+  "question": "Note: This question is part of a series of questions that persent the same scenario. Each question in the series contains a uique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou have a chatbot that uses question answering in Azure Cognitive Service for Language.\nUsers report that the responses of the chatbot lack formality when answering spurious questions.\nYou need to ensure that the chatbot provides formal responses to spurious questions.\nSolution: From Language Studio, you remove all the chit-chat question and answer pairs, and then retrain and republish the model.\nDoes this meet the goal?",
   "options": [
     "A. Yes",
     "B. No"
@@ -3410,7 +3094,7 @@
   "questionNumber": "Question 45 - Topic 5",
   "question": "DRAG DROP\nYou are building a bot.\nYou need to test the bot in the Bot Framework Emulator. The solution must ensure that you can debug the bot interactively.\nWhich three actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
   "images":"assets/images/question45-topic5.png",
-  "actions": [
+  "options": [
     "Run the bot app on a local host.",
     "Use the input prompt object to send a trace activity.",
     "Deploy the bot to Azure",
@@ -3426,7 +3110,7 @@
 {
   "questionNumber": "Question 46 - Topic 5",
   "images":"assets/images/question46-topic5.png",
-  "actions": [
+  "options": [
     "change to a different dialog",
     "identify New York as a city entity",
     "identify New York as a state entity",
@@ -3514,8 +3198,8 @@
   "correct": ["C. waterfall", "D. prompt"]
 },
 {
-  "questionNumber": "Question 52 - Topic 5",
-  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution. After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen. You are building a chatbot that will use question answering in Azure Cognitive Service for Language. You have a PDF named Doc1.pdf that contains a product catalogue and a price list. You upload Doc1.pdf and train the model. During testing, users report that the chatbot responds correctly to the following question: What is the price of ? The chatbot fails to respond to the following question: How much does cost? You need to ensure that the chatbot responds correctly to both questions. Solution: From Language Studio, you create an entity for cost, and then retrain and republish the model. Does this meet the goal?",
+  "questionNumber": "Question 52 - Topic 5", 
+  "question": "Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.\nAfter you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.\nYou are building a chatbot that will use question answering in Azure Cognitive Service for Language.\nYou have a PDF named Doc1.pdf that contains a product catalogue and a price list.\nYou upload Doc1.pdf and train the model.\nDuring testing, users report that the chatbot responds correctly to the following question: What is the price of ?\nThe chatbot fails to respond to the following question: How much does cost?\nYou need to ensure that the chatbot responds correctly to both questions.\nSolution: From Language Studio, you create an entity for cost, and then retrain and republish the model.\nDoes this meet the goal?",
   "options": [
     "Yes",
     "No"
@@ -3525,6 +3209,7 @@
 {
   "questionNumber": "Question 1 - Topic 6",
   "question": "You have a monitoring solution that uses the Azure AI Anomaly Detector service.\nYou provision a server named Server1 that has intermittent internet access.\nYou need to deploy the Azure AI Anomaly Detector to Server1.\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the answer area and arrange them in the correct order.",
+  "images":"assets/images/question1-topic6.png",
   "options": [
     "Query the prediction endpoint on Server1.",
     "From Server1, run the docker push command.",
@@ -3565,6 +3250,7 @@
 {
   "questionNumber": "Question 3 - Topic 7",
   "question": "You build a chatbot by using Azure OpenAI Studio.\nYou need to ensure that the responses are more deterministic and less creative.\nWhich two parameters should you configure? To answer, select the appropriate parameters in the answer area.\nNOTE: Each correct answer is worth one point.",
+  "images":"assets/images/question3-topic7.png",
   "options": [
     "Max responese",
     "Temperature",
@@ -3716,6 +3402,7 @@
 {
   "questionNumber": "Question 12 - Topic 7",
   "question": "You have an Azure subscription.\nYou need to create a new resource that will generate fictional stories in response to user prompts. The solution must ensure that the resource uses a customer-managed key to protect data.\nHow should you complete the script? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+  "images":"assets/images/question12-topic7.png",
   "options": [
     "AIServices",
     "LanguageAuthoring",
@@ -3728,5 +3415,321 @@
     "OpenAI",
     "--encryption"
   ]
+},
+{
+  "questionNumber": "Question 1 - Topic 8 - Testlet 1",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic8-testlet1.png",
+  "options": [
+    "Azure Blob storage",
+    "Custom Vision API",
+    "Azure Files",
+    "Conversational Language \nUnderstanding API",
+    "Translator API",
+    "Computer Vision API",
+    "Azure Cosmos DB"
+  ],
+  "correct": [
+    "Azure Blob storage",
+    "Computer Vision API",
+    "Translator API",
+    "Azure Files"
+  ]
+},
+{
+  "questionNumber": "Question 1 - Topic 9 - Testlet 2",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic9-testlet2.png",
+  "options": [
+    "1. Owner",
+    "2. Contributor",
+    "3. Cognitive Services User",
+    "4. Cognitive Services QnA Maker Read",
+    "5. Cognitive Services QnA Maker Editor",
+    "--------------------------------",
+    "Owner",
+    "Contributor",
+    "Cognitive Services User",
+    "Cognitive Services QnA Maker Read",
+    "Cognitive Services QnA Maker Editor",
+    "--------------------------------",
+    " Owner",
+    " Contributor",
+    " Cognitive Services User",
+    " Cognitive Services QnA Maker Read",
+    " Cognitive Services QnA Maker Editor"
+  ],
+  "correct": [
+    "3. Cognitive Services User",
+    "Cognitive Services QnA Maker Editor",
+    " Cognitive Services QnA Maker Read"
+  ]
+},
+{
+  "questionNumber": "Question 1 - Topic 10 - Testlet 3",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic10-testlet3.png",
+  "options": [
+    "Index the video by using the Azure Video Analyzer for Media (previously Video Indexer) API.",
+    "Upload the video to blob storage",
+    "Analyze the video by using the Computer Vision API.",
+    "Extract the transcript from Microsoft Stream.",
+    "Send the transcript to the Language Understanding API as an utterance.",
+    "Extract the transcipt from the Azure Video Analyzer for Media (previously Video Indexer) API.",
+    "Translate the transcript by using the Translator API",
+    "Upload the video to file storage."
+  ],
+  "correct": [
+    "Upload the video to blob storage",
+    "Index the video by using the Azure Video Analyzer for Media (previously Video Indexer) API.",
+    "Extract the transcipt from the Azure Video Analyzer for Media (previously Video Indexer) API.",
+    "Translate the transcript by using the Translator API"
+  ]
+},
+{
+  "questionNumber": "Question 2 - Topic 10 - Testlet 3",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question2-topic10-testlet3.png",
+  "options": [
+    "Dictionary",
+    "stream",
+    "string",
+    "VisualFeatureTypes.Description",
+    "VisualFeatureTypes.ImageType",
+    "VisualFeatureTypes.Objects",
+    "VisualFeatureTypes.Tag",
+    "var c = results.Brands.DetectedBrands[0]",
+    "var c = results.Description.Captions[0]",
+    "var c = results.Metadata[0]",
+    "var c = results.Objects[0]"
+  ],
+  "correct": [
+    "string",
+    "VisualFeatureTypes.Description",
+    "var c = results.Description.Captions[0]"
+  ]
+},
+{
+  "questionNumber": "Question 1 - Topic 11 - Testlet 4",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic11-testlet4.png",
+  "options": [
+    "Train a custom model",
+    "Label the sample documents",
+    "Create a new project and load sample documents",
+    "Create a composite model"
+  ],
+  "correct": [
+    "Create a new project and load sample documents",
+    "Label the sample documents",
+    "Train a custom model"
+  ]
+},
+{
+  "questionNumber": "Question 2 - Topic 11 - Testlet 4",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question2-topic11-testlet4.png",
+  "options": [
+    "A. Create a custom language model",
+    "B. Configure audio indexing for videos only",
+    "C. Enable multi-language detection for videos",
+    "D. Build a custom Person model for webinar presenters"
+  ],
+  "correct": "A. Create a custom language model"
+},
+{
+  "questionNumber": "Question 1 - Topic 12 - Testlet 5",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic12-testlet5.png",
+  "options": [
+    "api.cognitive.microsofttranslator.com",
+    "api-nam.cognitive.microsofttranslator.com",
+    "westuls.tts.speech.microsoft.com",
+    "westuls.tts.speech.microsoft.com",
+    "/detect",
+    "/languages",
+    "/text-to-speech",
+    "/translate"
+  ],
+  "correct": ["api-nam.cognitive.microsofttranslator.com", "/translate"]
+},
+{
+  "questionNumber": "Question 1 - Topic 13 - Testlet 6",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic13-testlet6.png",
+  "options": [
+    "A. documentResults.docType == 'prebuilt:receipt'",
+    "B. documentResults.fields.*.confidence < 0.7",
+    "C. documentResults.fields.ReceiptType.confidence > 0.7",
+    "D. documentResults.fields.MerchantName.confidence < 0.7"
+  ],
+  "correct": "B. documentResults.fields.*.confidence < 0.7"
+},
+{
+  "questionNumber": "Question 1 - Topic 14 - Testlet 7",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic14-testlet7.png",
+  "options": [
+    "A. Make API queries to the autocomplete endpoint and include suggesterName in the body.",
+    "B. Add a suggester that has the three product name fields as source fields.",
+    "C. Make API queries to the search endpoint and include the product name fields in the searchFields query parameter.",
+    "D. Add a suggester for each of the three product name fields.",
+    "E. Set the searchAnalyzer property for the three product name variants.",
+    "F. Set the analyzer property for the three product name variants."
+  ],
+  "correct": [
+    "A. Make API queries to the autocomplete endpoint and include suggesterName in the body.",
+    "B. Add a suggester that has the three product name fields as source fields.",
+    "F. Set the analyzer property for the three product name variants."
+  ]
+},
+{
+  "questionNumber": "Question 1 - Topic 15 - Testlet 8",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic15-testlet8.png",
+  "options": [
+    "A. /vision/v3.1/read/analyzeResults",
+    "B. /formrecognizer/v2.0/custom/models/{modelId}/analyze",
+    "C. /formrecognizer/v2.0/prebuilt/receipt/analyze",
+    "D. /vision/v3.1/describe",
+    "E. /vision/v3.1/read/analyze"
+  ],
+  "correct": [
+    "B. /formrecognizer/v2.0/custom/models/{modelId}/analyze",
+    "C. /formrecognizer/v2.0/prebuilt/receipt/analyze"
+  ]
+},
+{
+  "questionNumber": "Question 2 - Topic 15 - Testlet 8",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question2-topic15-testlet8.png",
+  "options": [
+    "\"categories\": []",
+    "\"categories\": [\"Email\", \"Persons\", \"Organizations\"]",
+    "\"categories\": [\"Locations\", \"Persons\", \"Organizations\"]",
+    "{\"name\": \"entities\"}",
+    "{\"name\": \"categories\"}",
+    "{\"name\": \"namedEntities\"}"
+  ],
+  "correct": [
+    "\"categories\": [\"Locations\", \"Persons\", \"Organizations\"]",
+    "{\"name\": \"namedEntities\"}"
+  ]
+},
+{
+  "questionNumber": "Question 3 - Topic 15 - Testlet 8",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question3-topic15-testlet8.png",
+  "options": [
+    "A. an indexer for Azure Blob storage attached to a skillset that contains the language detection skill and the text translation skill",
+    "B. an indexer for Azure Blob storage attached to a skillset that contains the language detection skill",
+    "C. an indexer for Azure Cosmos DB attached to a skillset that contains the document extraction skill and the text translation skill",
+    "D. an indexer for Azure Cosmos DB attached to a skillset that contains the language detection skill and the text translation skill"
+  ],
+  "correct": "D. an indexer for Azure Cosmos DB attached to a skillset that contains the language detection skill and the text translation skill"
+},
+{
+  "questionNumber": "Question 4 - Topic 15 - Testlet 8",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question4-topic15-testlet8.png",
+  "options": [
+    "A. synonym map",
+    "B. a suggester",
+    "C. a custom analyzer",
+    "D. a built-in key phrase extraction skill"
+  ],
+  "correct":  "A. synonym map"
+},
+{
+  "questionNumber": "Question 1 - Topic 16 - Testlet 9",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic16-testlet9.png",
+  "options": [
+    "if(language == 'en', 'en', name)",
+    "name",
+    "name.en",
+    "name[language]",
+    "\"$when\": \"$(stockLevel != 'OK')\"",
+    "\"$when\": \"${stockLevel == 'OK'}\"",
+    "\"$when\": \"$(stockLevel.OK)\"",
+    "image.altText.en",
+    "image.altText.language",
+    "image.altText.[\"language\"]",
+    "image.altText.[language]"
+  ],
+  "correct": [
+    "name[language]",
+    "\"$when\": \"$(stockLevel != 'OK')\"",
+    "image.altText.[language]"
+  ]
+},
+{
+  "questionNumber": "Question 2 - Topic 16 - Testlet 9",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question2-topic16-testlet9.png",
+  "options": [
+    "Cognitive Service User",
+    "Contributor",
+    "Owner",
+    "QnA Maker Editor",
+    "QnA Maker Read",
+    "--------------------------------",
+    " Cognitive Service User",
+    " Contributor",
+    " Owner",
+    " QnA Maker Editor",
+    " QnA Maker Read"
+  ],
+  "correct": [
+    "QnA Maker Editor",
+    " Cognitive Service User"
+  ]
+},
+{
+  "questionNumber": "Question 3 - Topic 16 - Testlet 9",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question3-topic16-testlet9.png",
+  "options": [
+    "if(language == 'en', 'en', name)",
+    "name",
+    "name.en",
+    "name[language]",
+    "\"$when\": \"$(stockLevel != 'OK')\"",
+    "\"$when\": \"${stockLevel == 'OK'}\"",
+    "\"$when\": \"$(stockLevel.OK)\"",
+    "image.altText.en",
+    "image.altText.language",
+    "image.altText.[\"language\"]",
+    "image.altText.[language]"
+  ],
+  "correct": [
+    "name[language]",
+    "\"$when\": \"$(stockLevel != 'OK')\"",
+    "image.altText.[language]"
+  ]
+},
+{
+  "questionNumber": "Question 1 - Topic 17 - Testlet 10",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question1-topic17-testlet10.png",
+  "options": [
+    "A. QnAMakerOptions.StrictFilters",
+    "B. QnADialogResponseOptions.CardNoMatchText",
+    "C. QnAMakerOptions.RankerType",
+    "D. QnAMakerOptions.ScoreThreshold"
+  ],
+  "correct": "D. QnAMakerOptions.ScoreThreshold"
+},
+{
+  "questionNumber": "Question 2 - Topic 17 - Testlet 10",
+  "question":"Introductory Info \nCASE STUDY",
+  "images":"assets/images/question2-topic17-testlet10.png",
+  "options": [
+    "A. Microsoft Translator",
+    "B. Language Understanding",
+    "C. Orchestrator",
+    "D. chatdown"
+  ],
+  "correct": "C. Orchestrator"
 }
 ]
