@@ -593,7 +593,7 @@
   "correct": [
     "B. Provision the Language service resource in Azure.", 
     "D. Deploy a Docker container to an on-premises server.", 
-    "A. Identify the Language service endpoint URL and query the prediction endpoint."
+    "C. Run the container and query the prediction endpoint."
   ]
 },
 {
